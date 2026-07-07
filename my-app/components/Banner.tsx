@@ -1,3 +1,6 @@
 export default function Banner() {
-  return <></>;
+  return 
+  <>
+  
+  </>
 }

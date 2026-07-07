@@ -47,7 +47,7 @@ export default function Home() {
               <button className="text-2xl text-black">→</button>
             </div>
 
-            <button className=" h-15 mt-6 w-full rounded-xl bg-[#f0f0f0] text-[18px] font-semibold text-black transition hover:bg-grey-500">
+            <button className=" h-15 mt-6 w-full rounded-xl  text-[18px] font-semibold text-white transition  hover:bg-[#4828d8] bg-[#5433EB]">
               Submit
             </button>
 
@@ -60,7 +60,7 @@ export default function Home() {
               <div className="h-px flex-1 bg-gray-300" />
             </div>
             {/* SHOP BUTTON */}
-            <button className=" h-15 w-full rounded-xl bg-[#5433EB] text-[18px] font-semibold text-white transition hover:bg-[#4828d8]">
+            <button className=" h-15 w-full rounded-xl  text-[18px] font-semibold text-black transition hover:bg-grey-500 bg-[#f0f0f0]">
               Create Account
             </button>
 

@@ -1,4 +1,5 @@
-import { ChevronDown, Heart, Search, ShoppingBag, User } from "lucide-react";
+import { ChevronDown, Heart, ShoppingBag, User } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
@@ -7,16 +8,8 @@ export default function Navbar() {
         <strong className="text-white ">Order today, shipped today</strong>
       </div>
       <section className="flex justify-between  items-center py-8 px-7">
-        <div className="flex">
-          <Search className="text-abu mr-3" />
-          <input
-            type="text"
-            name="Search"
-            id=""
-            placeholder="Search our store"
-          />
-        </div>
-        <img src="/logo.png" alt="logo" className="w-30" />
+        {/* <SearchBar /> */}
+        <Image src="/logo.png" alt="logo" width={120} height={40} />
         <div className="flex gap-4">
           <User className="text-abu" />
           <Heart className="text-abu" />

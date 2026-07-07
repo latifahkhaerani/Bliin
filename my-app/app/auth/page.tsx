@@ -64,19 +64,6 @@ export default function Home() {
               Create Account
             </button>
 
-            {/* CHECKBOX */}
-            <label className="mt-4 flex cursor-pointer items-center gap-3">
-              <input
-                type="checkbox"
-                defaultChecked
-                className="h-5 w-5 rounded-full accent-pink-500"
-              />
-
-              <span className="text-[16px] font-medium text-black">
-                Email me order updates & news
-              </span>
-            </label>
-
             {/* TERMS */}
             <p className="mt-6 text-center text-[14px] text-gray-500">
               By continuing, you agree to our
@@ -85,11 +72,6 @@ export default function Home() {
               </button>
             </p>
           </div>
-
-          {/* PRIVACY */}
-          <button className="text-[16px] mt-20 text-pink-500">
-            Privacy policy
-          </button>
         </div>
       </main>
     </>

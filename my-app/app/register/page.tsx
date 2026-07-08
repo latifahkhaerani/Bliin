@@ -29,12 +29,18 @@ export default function Home() {
             {/*  INPUT */}
             <div className="flex mt-6 h-14.5 items-center rounded-xl border border-gray-300 px-4">
               <input
-                type="email"
+                type="text"
+                placeholder="Username"
+                className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
+              />
+            </div>
+
+            <div className="flex mt-6 h-14.5 items-center rounded-xl border border-gray-300 px-4">
+              <input
+                type="text"
                 placeholder="Name"
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
-
-              <button className="text-2xl text-black">→</button>
             </div>
 
             <div className="flex mt-6 h-14.5 items-center rounded-xl border border-gray-300 px-4">
@@ -43,8 +49,6 @@ export default function Home() {
                 placeholder="Email"
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
-
-              <button className="text-2xl text-black">→</button>
             </div>
 
             <div className="flex h-14.5 mt-5 items-center rounded-xl border border-gray-300 px-4">
@@ -53,8 +57,6 @@ export default function Home() {
                 placeholder="Password"
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
-
-              <button className="text-2xl text-black">→</button>
             </div>
 
             <button className=" h-15 mt-6 w-full rounded-xl  text-[18px] font-semibold text-white transition  hover:bg-[#4828d8] bg-[#5433EB]">

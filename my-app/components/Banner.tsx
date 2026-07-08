@@ -1,3 +1,5 @@
+"";
+
 import Image from "next/image";
 
 export default function Banner() {
@@ -25,7 +27,7 @@ export default function Banner() {
             {/* RIGHT IMAGE */}
             <div className="relative flex-1">
               <Image
-                src="/banner.png"
+                src="https://www.blippo.com/cdn/shop/files/Pompompurin_Lucky_Bag_Banner1_1024x1024.jpg?v=1782289235%22%20alt=%22%22%20class=%22rimage__image"
                 alt="Pompompurin Lucky Bags"
                 fill
                 className="object-cover"

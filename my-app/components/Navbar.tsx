@@ -9,7 +9,13 @@ export default function Navbar() {
       </div>
       <section className="flex justify-between  items-center py-8 px-7">
         {/* <SearchBar /> */}
-        <Image src="/logo.png" alt="logo" width={120} height={40} />
+        <Image
+          src="/logo.png"
+          alt="logo"
+          width={120}
+          height={40}
+          className="w-auto h-auto"
+        />
         <div className="flex gap-4">
           <User className="text-abu" />
           <Heart className="text-abu" />

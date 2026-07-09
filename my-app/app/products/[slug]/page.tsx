@@ -1,6 +1,5 @@
 import Image from "next/image";
 import AddToWishlist from "@/components/AddToWishlist";
-import { ProductType } from "@/types";
 
 export default async function ProductDetail({
   params,
@@ -26,11 +25,11 @@ export default async function ProductDetail({
         <div>
           <div className="relative aspect-square overflow-hidden rounded-2xl">
             <Image
-              src={product.thumbnail || product.image}
+              src={product.thumbnail || product.images[0] || product.images[1]}
               alt={product.name}
-              width={200}
-              height={200}
-              className="object-cover"
+              width={500}
+              height={500}
+              className="w-full h-auto object-cover"
               priority
             />
           </div>
@@ -46,6 +45,7 @@ export default async function ProductDetail({
                   src={image}
                   alt="Pikachu"
                   fill
+                  sizes="100vw"
                   className="object-cover"
                 />
               </div>
@@ -60,18 +60,30 @@ export default async function ProductDetail({
             {product.name}
           </h1>
 
+          {/* TAGS */}
+          <div className="mt-3 flex flex-wrap gap-2">
+            {product.tags.map((tag: string) => (
+              <span
+                key={tag}
+                className="rounded-full bg-pink-100 px-3 py-1 mb-5 text-sm font-medium text-primary"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
+
           {/* PRICE */}
           <p className="mt-2 text-3xl text-gray-600">US$ {product.price}</p>
 
           {/* PRODUCT INFO */}
-          <div className="mt-8 space-y-1 text-base text-gray-500">
+          <div className="mt-5 space-y-1 text-base text-gray-500">
             {product.freeShipping === true && (
               <p>♧ &nbsp; This Item Ships Free!</p>
             )}
 
             <p>
-              ♧ &nbsp; Earn 6490{" "}
-              <span className="text-primary underline">Kawaii Coins</span> from
+              ♧ &nbsp; Earn {product.rewards}
+              <span className="text-primary underline"> Kawaii Coins</span> from
               this product
             </p>
           </div>
@@ -101,12 +113,8 @@ export default async function ProductDetail({
             <p>{product.description}</p>
 
             <ul className="mt-5 list-disc pl-7">
-              {product.features.map((x: string) => {
-                return (
-                  <>
-                    <li> {x}</li>
-                  </>
-                );
+              {product.features.map((x: string, idx: number) => {
+                return <li key={idx}> {x}</li>;
               })}
             </ul>
           </div>
@@ -123,7 +131,7 @@ export default async function ProductDetail({
             </button>
           </div>
 
-          {/* SHOP PAY */}
+          {/* SHOP PAY
           <div className="mt-8 text-base text-gray-600">
             <p>
               Pay in 4 interest-free installments of{" "}
@@ -134,7 +142,7 @@ export default async function ProductDetail({
             </p>
 
             <button className="mt-1 underline">Learn more</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>

@@ -12,7 +12,7 @@ export default function Home() {
               alt="Blippo"
               width={125}
               height={60}
-              className="object-contain"
+              className="object-contain w-auto h-auto"
             />
           </div>
 

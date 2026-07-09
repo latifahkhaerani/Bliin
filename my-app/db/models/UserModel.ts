@@ -22,7 +22,7 @@ class UserModel {
     // console.log(UserSchema.parse(body));
     const validInput = UserSchema.parse(body);
 
-    const findEmail = await this.collection().find({
+    const findEmail = await this.collection().findOne({
       email: validInput.email,
     });
 
@@ -33,7 +33,7 @@ class UserModel {
       };
     }
 
-    const findUsername = await this.collection().find({
+    const findUsername = await this.collection().findOne({
       email: validInput.username,
     });
 

@@ -1,6 +1,30 @@
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 export default function Home() {
+  const handleRegister = async (form: FormData) => {
+    "use server";
+
+    const email = form.get("email");
+    const username = form.get("username");
+    const name = form.get("name");
+    const password = form.get("password");
+
+    const data = await fetch("http://localhost:3000/api/register", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        username,
+        password,
+      }),
+    });
+
+    redirect("/login");
+  };
   return (
     <>
       <main className="relative flex min-h-screen justify-center bg-white px-6">
@@ -17,7 +41,7 @@ export default function Home() {
           </div>
 
           {/* FORM */}
-          <div className="mt-10">
+          <form action={handleRegister} className="mt-10">
             <h2 className="text-[30px] font-bold tracking-tight text-black">
               Sign up
             </h2>
@@ -30,6 +54,7 @@ export default function Home() {
             <div className="flex mt-6 h-14.5 items-center rounded-xl border border-gray-300 px-4">
               <input
                 type="text"
+                name="username"
                 placeholder="Username"
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
@@ -39,6 +64,7 @@ export default function Home() {
               <input
                 type="text"
                 placeholder="Name"
+                name="name"
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
             </div>
@@ -47,6 +73,7 @@ export default function Home() {
               <input
                 type="email"
                 placeholder="Email"
+                name="email"
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
             </div>
@@ -55,6 +82,7 @@ export default function Home() {
               <input
                 type="password"
                 placeholder="Password"
+                name="password"
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
             </div>
@@ -83,7 +111,7 @@ export default function Home() {
                 Terms of service
               </button>
             </p>
-          </div>
+          </form>
         </div>
       </main>
     </>

@@ -1,15 +1,29 @@
-// "use client";
+"use client";
 
 import Image from "next/image";
 import AddRemoveWishlist from "./AddRemoveWishlist";
 import { ProductType } from "@/types";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-export default async function ListProduct() {
-  const data = await fetch("http://localhost:3000/api/products");
-  // console.log(data);
+export default function ListProduct() {
+  const [products, setProducts] = useState<ProductType[]>([]);
 
-  const products: ProductType[] = await data.json();
+  async function get() {
+    try {
+      const data = await fetch("http://localhost:3000/api/products");
+      // console.log(data);
+
+      const product: ProductType[] = await data.json();
+      setProducts(product);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  useEffect(() => {
+    get();
+  }, []);
 
   return (
     <section className="bg-white px-8 py-10">
@@ -28,6 +42,7 @@ export default async function ListProduct() {
                 }
                 alt={product.name}
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
 
@@ -54,23 +69,26 @@ export default async function ListProduct() {
               <div className="mt-2 flex items-center justify-center gap-2">
                 <span className={`text-xl`}>{product.price}</span>
 
-                {/* {product.oldPrice && (
+                {product.originalPrice && (
                   <span className="text-base text-gray-400 line-through">
-                    {product.oldPrice}
+                    {product.originalPrice}
                   </span>
-                )} */}
+                )}
               </div>
 
               {/* REVIEWS */}
-              {/* {product.reviews && (
+              {product.reviews && (
                 <div className="mt-4 flex items-center justify-center gap-2">
-                  <span className="text-lg text-yellow-400">★★★★☆</span>
+                  <div className="flex items-center gap-2">
+                    <span>{product.rating.toFixed(1)}</span>
 
-                  <span className="text-sm text-gray-500">
-                    {product.reviews} reviews
-                  </span>
+                    <span className="text-yellow-400">
+                      {"★".repeat(Math.round(product.rating))}
+                      {"☆".repeat(5 - Math.round(product.rating))}
+                    </span>
+                  </div>
                 </div>
-              )} */}
+              )}
             </div>
           </Link>
         ))}

@@ -1,5 +1,3 @@
-"";
-
 import Image from "next/image";
 
 export default function Banner() {
@@ -30,6 +28,7 @@ export default function Banner() {
                 src="https://www.blippo.com/cdn/shop/files/Pompompurin_Lucky_Bag_Banner1_1024x1024.jpg?v=1782289235%22%20alt=%22%22%20class=%22rimage__image"
                 alt="Pompompurin Lucky Bags"
                 fill
+                sizes="100vw"
                 className="object-cover"
                 priority
               />

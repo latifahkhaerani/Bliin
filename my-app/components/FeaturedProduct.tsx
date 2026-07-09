@@ -1,5 +1,3 @@
-"";
-
 import Link from "next/link";
 import { ProductType } from "@/types";
 import Image from "next/image";
@@ -51,6 +49,7 @@ export default async function FeaturedProduct() {
                 }
                 alt={product.name}
                 fill
+                sizes="100vw"
                 className="object-cover"
               />
 

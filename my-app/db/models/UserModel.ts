@@ -27,7 +27,8 @@ class UserModel {
 
     body.password = bcrypt.hashSync(body.password, 10);
 
-    return await this.collection().insertOne(body);
+    const result = await this.collection().insertOne(body);
+    return "User created with Id :" + result.insertedId;
   }
 }
 

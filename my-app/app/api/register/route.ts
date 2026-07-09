@@ -1,4 +1,5 @@
 import UserModel from "@/db/models/UserModel";
+import errorHandler from "@/helpers/errorHandler";
 
 export async function POST(request: Request) {
   try {
@@ -6,14 +7,9 @@ export async function POST(request: Request) {
     const result = await UserModel.register(body);
 
     return Response.json({ result });
-  } catch (error: unknown) {
+  } catch (error) {
     console.log(error);
 
-    const err = error as { message: string; status: number };
-
-    return Response.json({
-      message: err.message || "Internal server error",
-      status: err.status || 500,
-    });
+    return errorHandler(error);
   }
 }

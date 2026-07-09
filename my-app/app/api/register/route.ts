@@ -9,7 +9,6 @@ export async function POST(request: Request) {
     return Response.json({ result });
   } catch (error) {
     console.log(error);
-
     return errorHandler(error);
   }
 }

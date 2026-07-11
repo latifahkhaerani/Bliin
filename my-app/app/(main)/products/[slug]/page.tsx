@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { slug } = await params;
 
   const product: ProductType = await fetch(
-    `http://localhost:3000/api/products/${slug}`,
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${slug}`,
     {
       cache: "no-store",
     },
@@ -45,7 +45,7 @@ export default async function ProductDetail({
   // console.log(await params, "paramm<<");
   const { slug } = await params;
 
-  const data = await fetch(`http://localhost:3000/api/products/${slug}`);
+  const data = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products/${slug}`);
 
   const product = await data.json();
 

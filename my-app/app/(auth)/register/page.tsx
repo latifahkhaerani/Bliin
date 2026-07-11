@@ -52,7 +52,7 @@ export default function Register() {
           <div className="flex justify-center pt-12.5">
             <Image
               src="/logo.png"
-              alt="Blippo"
+              alt="Bliiin"
               width={125}
               height={60}
               className="object-contain w-auto h-auto"

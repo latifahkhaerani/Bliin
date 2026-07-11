@@ -4,7 +4,7 @@ import { ProductType } from "@/types";
 import FeaturedProductList from "./FeaturedProductList";
 
 export default async function FeaturedProduct() {
-  const data = await fetch("http://localhost:3000/api/products");
+  const data = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products`);
 
   const products: ProductType[] = await data.json();
   const showFeatured = products

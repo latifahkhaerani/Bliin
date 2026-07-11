@@ -21,7 +21,7 @@ export default function ListProduct({ keyword }: Props) {
   async function get(nextPage = 1) {
     try {
       const data = await fetch(
-        `http://localhost:3000/api/products?q=${encodeURIComponent(keyword)}&page=${nextPage}`,
+        `${process.env.NEXT_PUBLIC_BASE_URL}/api/products?q=${encodeURIComponent(keyword)}&page=${nextPage}`,
       );
 
       const newProducts: ProductType[] = await data.json();

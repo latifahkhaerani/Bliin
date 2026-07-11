@@ -1,30 +1,48 @@
+"use client";
+
 import Image from "next/image";
-import { redirect } from "next/navigation";
+import { SubmitEvent, useState } from "react";
+import Swal from "sweetalert2";
 
-export default function Home() {
-  const handleRegister = async (form: FormData) => {
-    "use server";
+export default function Register() {
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
 
-    const email = form.get("email");
-    const username = form.get("username");
-    const name = form.get("name");
-    const password = form.get("password");
+  const handleRegister = async (e: SubmitEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-    const data = await fetch("http://localhost:3000/api/register", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        username,
-        password,
-      }),
-    });
+    try {
+      const response = await fetch("/api/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          username,
+          password,
+        }),
+      });
 
-    redirect("/login");
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw data;
+      }
+
+      window.location.href = "/login";
+    } catch (error) {
+      Swal.fire({
+        title: "Error",
+        text: (error as Error).message,
+        icon: "error",
+      });
+    }
   };
+
   return (
     <>
       <main className="relative flex min-h-screen justify-center bg-white px-6">
@@ -41,7 +59,7 @@ export default function Home() {
           </div>
 
           {/* FORM */}
-          <form action={handleRegister} className="mt-10">
+          <form onSubmit={handleRegister} className="mt-10">
             <h2 className="text-[30px] font-bold tracking-tight text-black">
               Sign up
             </h2>
@@ -50,44 +68,55 @@ export default function Home() {
               Sign up or already have an account
             </p>
 
-            {/*  INPUT */}
-            <div className="flex mt-6 h-14.5 items-center rounded-xl border border-gray-300 px-4">
+            {/* INPUT */}
+            <div className="mt-6 flex h-14.5 items-center rounded-xl border border-gray-300 px-4">
               <input
                 type="text"
                 name="username"
                 placeholder="Username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
             </div>
 
-            <div className="flex mt-6 h-14.5 items-center rounded-xl border border-gray-300 px-4">
+            <div className="mt-6 flex h-14.5 items-center rounded-xl border border-gray-300 px-4">
               <input
                 type="text"
-                placeholder="Name"
                 name="name"
+                placeholder="Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
             </div>
 
-            <div className="flex mt-6 h-14.5 items-center rounded-xl border border-gray-300 px-4">
+            <div className="mt-6 flex h-14.5 items-center rounded-xl border border-gray-300 px-4">
               <input
                 type="email"
-                placeholder="Email"
                 name="email"
+                placeholder="Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
             </div>
 
-            <div className="flex h-14.5 mt-5 items-center rounded-xl border border-gray-300 px-4">
+            <div className="mt-5 flex h-14.5 items-center rounded-xl border border-gray-300 px-4">
               <input
                 type="password"
-                placeholder="Password"
                 name="password"
+                placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
               />
             </div>
 
-            <button className=" h-15 mt-6 w-full rounded-xl  text-[18px] font-semibold text-white transition  hover:bg-[#4828d8] bg-[#5433EB]">
+            <button
+              type="submit"
+              className="mt-6 h-15 w-full rounded-xl bg-[#5433EB] text-[18px] font-semibold text-white transition hover:bg-[#4828d8]"
+            >
               Submit
             </button>
 

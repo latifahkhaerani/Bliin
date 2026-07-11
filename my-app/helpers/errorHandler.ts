@@ -17,8 +17,10 @@ export default function errorHandler(error: unknown) {
     status = 400;
   }
 
-  return Response.json({
-    message,
-    status,
-  });
+  return Response.json(
+    {
+      message,
+    },
+    { status },
+  );
 }

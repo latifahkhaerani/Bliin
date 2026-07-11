@@ -2,6 +2,7 @@
 
 import ListProduct from "@/components/ListProduct";
 import SearchBar from "@/components/Search";
+
 import { useState } from "react";
 
 export default function Product() {
@@ -26,7 +27,7 @@ export default function Product() {
 
       {/* PRODUCT COMPONENT */}
       <div className="mt-10">
-        <ListProduct  keyword={keyword} />
+        <ListProduct keyword={keyword} />
       </div>
     </main>
   );

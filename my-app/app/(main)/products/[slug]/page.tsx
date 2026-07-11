@@ -1,5 +1,41 @@
 import Image from "next/image";
 import WishlistButton from "@/components/WishlistButton";
+import { Metadata } from "next";
+import { ProductType } from "@/types";
+
+type Props = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
+export async function generateMetadata({
+  params,
+}: Props): Promise<Metadata> {
+  const { slug } = await params;
+
+  const product: ProductType = await fetch(
+    `http://localhost:3000/api/products/${slug}`,
+    {
+      cache: "no-store",
+    },
+  ).then((res) => res.json());
+
+  return {
+    title: `${product.name} | Bliin`,
+    description: product.excerpt,
+
+    openGraph: {
+      title: product.name,
+      description: product.excerpt,
+      images: [
+        {
+          url: product.thumbnail,
+        },
+      ],
+    },
+  };
+}
 
 export default async function ProductDetail({
   params,

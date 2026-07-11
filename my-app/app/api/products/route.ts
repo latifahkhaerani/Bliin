@@ -5,7 +5,10 @@ export async function GET(request: Request) {
 
   const q = searchParams.get("q") || "";
 
-  const products = await ProductModel.getAll(q);
+  // infinite scroll
+  const page = Number(searchParams.get("page")) || 1;
+
+  const products = await ProductModel.getAll(q, page);
 
   return Response.json(products);
 }

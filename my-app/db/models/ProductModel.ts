@@ -5,7 +5,9 @@ class ProductModel {
     return database.collection("Products");
   }
 
-  static async getAll(keyword: string) {
+  static async getAll(keyword: string, page: number) {
+    const LIMIT = 10;
+
     const query =
       keyword === ""
         ? {}
@@ -26,7 +28,11 @@ class ProductModel {
             ],
           };
 
-    return await this.collection().find(query).toArray();
+    return await this.collection()
+      .find(query)
+      .skip((page - 1) * LIMIT)
+      .limit(LIMIT)
+      .toArray();
   }
 
   static async getBySlug(slug: string) {

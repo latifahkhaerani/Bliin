@@ -33,8 +33,14 @@ export default function FeaturedProductList({ products }: Props) {
     }
   }
 
-  function handleAddWishlist(productId: string) {
-    setWishlist((currentWishlist) => [...currentWishlist, productId]);
+  function handleToggleWishlist(productId: string) {
+    setWishlist((prev) => {
+      if (prev.includes(productId)) {
+        return prev.filter((id) => id !== productId);
+      }
+
+      return [...prev, productId];
+    });
   }
 
   useEffect(() => {
@@ -68,7 +74,7 @@ export default function FeaturedProductList({ products }: Props) {
               <AddRemoveWishlist
                 productId={product._id}
                 isWishlist={isWishlist}
-                onAddWishlist={handleAddWishlist}
+                onToggleWishlist={handleToggleWishlist}
               />
             </div>
 

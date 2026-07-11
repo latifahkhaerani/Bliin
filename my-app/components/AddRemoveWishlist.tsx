@@ -6,14 +6,14 @@ import Swal from "sweetalert2";
 type Props = {
   productId: string;
   isWishlist: boolean;
-  onAddWishlist: (productId: string) => void;
+  onToggleWishlist: (productId: string) => void;
   variant?: "card" | "detail";
 };
 
 export default function AddRemoveWishlist({
   productId,
   isWishlist,
-  onAddWishlist,
+  onToggleWishlist,
   variant = "card",
 }: Props) {
   const handleAddWishlist = async (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -21,8 +21,18 @@ export default function AddRemoveWishlist({
     e.stopPropagation();
 
     try {
+      // const response = await fetch("/api/wishlist", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({
+      //     productId,
+      //   }),
+      // });
+
       const response = await fetch("/api/wishlist", {
-        method: "POST",
+        method: isWishlist ? "DELETE" : "POST",
         headers: {
           "Content-Type": "application/json",
         },
@@ -37,7 +47,7 @@ export default function AddRemoveWishlist({
         throw data;
       }
 
-      onAddWishlist(productId);
+      onToggleWishlist(productId);
     } catch (error) {
       Swal.fire({
         title: "Error",

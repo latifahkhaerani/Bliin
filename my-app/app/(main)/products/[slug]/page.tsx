@@ -1,6 +1,4 @@
 import Image from "next/image";
-import AddToWishlist from "@/components/WishlistButton";
-import AddRemoveWishlist from "@/components/AddRemoveWishlist";
 import WishlistButton from "@/components/WishlistButton";
 
 export default async function ProductDetail({

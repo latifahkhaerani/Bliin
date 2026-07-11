@@ -71,7 +71,7 @@ export default function ListProduct() {
                 <AddRemoveWishlist
                   productId={product._id}
                   isWishlist={isWishlist}
-                  onAddWishlist={handleAddWishlist}
+                  onToggleWishlist={handleAddWishlist}
                 />
               </div>
 

@@ -53,3 +53,18 @@ export async function POST(request: Request) {
     return errorHandler(error);
   }
 }
+
+export async function DELETE(request: Request) {
+  try {
+    const userId = request.headers.get("x-user-id")!;
+    const { productId } = await request.json();
+
+    await WishlistModel.remove(userId, productId);
+
+    return Response.json({
+      message: "Wishlist removed",
+    });
+  } catch (error) {
+    return errorHandler(error);
+  }
+}

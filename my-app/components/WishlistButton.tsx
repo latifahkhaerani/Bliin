@@ -28,8 +28,14 @@ export default function WishlistButton({ productId }: Props) {
     getWishlist();
   }, []);
 
-  function handleAddWishlist(productId: string) {
-    setWishlist((prev) => [...prev, productId]);
+  function handleToggleWishlist(productId: string) {
+    setWishlist((prev) => {
+      if (prev.includes(productId)) {
+        return prev.filter((id) => id !== productId);
+      }
+
+      return [...prev, productId];
+    });
   }
 
   return (
@@ -38,7 +44,7 @@ export default function WishlistButton({ productId }: Props) {
         variant="detail"
         productId={productId}
         isWishlist={wishlist.includes(productId)}
-        onAddWishlist={handleAddWishlist}
+        onToggleWishlist={handleToggleWishlist}
       />
     </>
   );

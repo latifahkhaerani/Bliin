@@ -1,6 +1,6 @@
 export default function DetailInfo() {
   return (
-    <section className="px-12 py-14 text-center">
+    <section className="px-12 pb-14 text-center">
       <div className="mx-auto max-w-5xl">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-primary">
           Discover Kawaii

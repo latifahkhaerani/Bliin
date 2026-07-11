@@ -1,8 +1,12 @@
-import { ChevronDown, Heart, ShoppingBag, User } from "lucide-react";
+import { Heart, ShoppingBag, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import LogoutButton from "./LogoutButton";
+import NavItem from "./NavItem";
+import MegaMenu from "./MegaMenu";
+import NavbarSearch from "./NavbarSearch";
+import CartButton from "./CartButton";
 
 export default async function Navbar() {
   const cookieStore = await cookies();
@@ -11,14 +15,38 @@ export default async function Navbar() {
 
   const isLogin = !!authorization;
 
+  let wishlistCount = 0;
+
+  if (isLogin) {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/wishlist`,
+      {
+        headers: {
+          Cookie: cookieStore.toString(),
+        },
+        cache: "no-store",
+      },
+    );
+
+    if (response.ok) {
+      const wishlists = await response.json();
+      wishlistCount = wishlists.length;
+    }
+  }
   return (
     <>
       <div className="flex justify-center bg-primary p-2">
-        <strong className="text-white">Order today, shipped today</strong>
+        <strong className="text-white text-sm">
+          Order today, shipped today*
+        </strong>
       </div>
 
-      <section className="flex items-center justify-between px-7 py-8">
-        <Link href="/">
+      <section className="relative flex items-center justify-between px-10 py-4">
+        {/* LEFT */}
+        <NavbarSearch />
+
+        {/* CENTER */}
+        <Link href="/" className="absolute left-1/2 -translate-x-1/2">
           <Image
             src="/logo.png"
             alt="logo"
@@ -60,35 +88,31 @@ export default async function Navbar() {
             </div>
           </div>
 
-          <Link href="/wishlist">
+          <Link href="/wishlist" className="relative">
             <Heart className="text-abu" />
+
+            {wishlistCount > 0 && (
+              <span className=" absolute top-0 -right-1.5 flex h-3 w-3 items-center justify-center rounded-full bg-abu text-[9px] font-bold text-white">
+                {wishlistCount}
+              </span>
+            )}
           </Link>
 
-          <ShoppingBag className="text-abu" />
+          <CartButton />
         </div>
       </section>
 
       {/* NAVIGATION */}
-      <section className="flex justify-around">
-        <button className="flex items-center gap-1">
-          <p className="text-abu">WHAT NEW?</p>
-          <ChevronDown className="text-abu" size={17} />
-        </button>
+      <section className="flex justify-center gap-12 border-gray-100 mt-3">
+        <NavItem title="WHAT'S NEW" />
 
-        <button className="flex items-center gap-1">
-          <p className="text-abu">POPULAR ITEMS</p>
-          <ChevronDown className="text-abu" size={17} />
-        </button>
+        <NavItem title="POPULAR ITEMS" />
+        <NavItem title="SCHOOL & OFFICE" />
+        <NavItem title="CLOTHING & ACCESORIES" />
 
-        <button className="flex items-center gap-1">
-          <p className="text-abu">SCHOOL & OFFICE</p>
-          <ChevronDown className="text-abu" size={17} />
-        </button>
+        <MegaMenu />
 
-        <button className="flex items-center gap-1">
-          <p className="text-abu">CLOTHING AND ACCESORIES</p>
-          <ChevronDown className="text-abu" size={17} />
-        </button>
+        <NavItem title="SALE" />
       </section>
     </>
   );

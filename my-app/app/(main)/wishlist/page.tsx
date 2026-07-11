@@ -1,6 +1,7 @@
 "use client";
 
 import { WishlistType } from "@/types";
+import { X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -21,6 +22,30 @@ export default function Wishlist() {
       setWishlists(data);
     } catch (error) {
       console.log("ERROR WISHLIST:", error);
+    }
+  }
+
+  async function handleRemoveWishlist(productId: string) {
+    try {
+      const response = await fetch("/api/wishlist", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          productId,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) throw data;
+
+      setWishlists((prev) =>
+        prev.filter((item) => item.productId !== productId),
+      );
+    } catch (error) {
+      console.log(error);
     }
   }
 
@@ -51,23 +76,33 @@ export default function Wishlist() {
             const product = wishlist.product;
 
             return (
-              <Link
-                href={`/products/${product.slug}`}
-                key={wishlist._id}
-                className="min-w-0"
-              >
+              <div key={wishlist._id} className="min-w-0">
                 <div className="relative aspect-square overflow-hidden rounded-2xl">
-                  <Image
-                    src={
-                      product.images?.[1] ||
-                      product.images?.[0] ||
-                      product.thumbnail
-                    }
-                    alt={product.name}
-                    fill
-                    sizes="100vw"
-                    className="object-cover"
-                  />
+                  <button
+                    type="button"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      handleRemoveWishlist(wishlist.productId);
+                    }}
+                    className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow hover:bg-gray-100"
+                  >
+                    <X size={18} />
+                  </button>
+
+                  <Link href={`/products/${product.slug}`}>
+                    <Image
+                      src={
+                        product.images?.[1] ||
+                        product.images?.[0] ||
+                        product.thumbnail
+                      }
+                      alt={product.name}
+                      fill
+                      sizes="100vw"
+                      className="object-cover"
+                    />
+                  </Link>
                 </div>
 
                 <div className="mt-4 text-center">
@@ -96,7 +131,7 @@ export default function Wishlist() {
                     </div>
                   )}
                 </div>
-              </Link>
+              </div>
             );
           })}
         </div>

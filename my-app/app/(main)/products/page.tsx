@@ -2,8 +2,11 @@
 
 import ListProduct from "@/components/ListProduct";
 import SearchBar from "@/components/Search";
+import { useState } from "react";
 
 export default function Product() {
+  const [keyword, setKeyword] = useState("");
+
   return (
     <main className="min-h-screen bg-white px-12 py-6">
       {/* BREADCRUMB */}
@@ -19,11 +22,11 @@ export default function Product() {
       </h1>
 
       {/* SEARCH */}
-      <SearchBar />
+      <SearchBar keyword={keyword} setKeyword={setKeyword} />
 
       {/* PRODUCT COMPONENT */}
       <div className="mt-10">
-        <ListProduct />
+        <ListProduct  keyword={keyword} />
       </div>
     </main>
   );

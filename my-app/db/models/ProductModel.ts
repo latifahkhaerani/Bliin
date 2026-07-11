@@ -5,9 +5,28 @@ class ProductModel {
     return database.collection("Products");
   }
 
-  static async getAll() {
-    const product = await this.collection().find().toArray();
-    return product;
+  static async getAll(keyword: string) {
+    const query =
+      keyword === ""
+        ? {}
+        : {
+            $or: [
+              {
+                name: {
+                  $regex: keyword,
+                  $options: "i",
+                },
+              },
+              {
+                tags: {
+                  $regex: keyword,
+                  $options: "i",
+                },
+              },
+            ],
+          };
+
+    return await this.collection().find(query).toArray();
   }
 
   static async getBySlug(slug: string) {

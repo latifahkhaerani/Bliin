@@ -5,17 +5,23 @@ import AddRemoveWishlist from "./AddRemoveWishlist";
 import { ProductType } from "@/types";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { string } from "zod";
 
-export default function ListProduct() {
+type Props = {
+  keyword: string;
+};
+
+export default function ListProduct({ keyword }: Props) {
   const [products, setProducts] = useState<ProductType[]>([]);
   const [wishlist, setWishlist] = useState<string[]>([]);
 
   async function get() {
     try {
-      const productResponse = await fetch("/api/products");
+      const data = await fetch(
+        `http://localhost:3000/api/products?q=${encodeURIComponent(keyword)}`,
+      );
 
-      const products: ProductType[] = await productResponse.json();
-
+      const products: ProductType[] = await data.json();
       setProducts(products);
 
       const wishlistResponse = await fetch("/api/wishlist");
@@ -40,7 +46,7 @@ export default function ListProduct() {
 
   useEffect(() => {
     get();
-  }, []);
+  }, [keyword]);
 
   return (
     <section className="bg-white px-8 py-10">

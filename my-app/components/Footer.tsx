@@ -3,11 +3,11 @@ import { Music2, Heart, Send } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="mt-20 bg-primary text-white">
-      <div className="mx-auto grid max-w-7xl grid-cols-4 gap-16 px-12 py-14">
+    <footer className="mt-8 bg-primary text-white">
+      <div className="mx-auto grid max-w-8xl grid-cols-4 gap-10 px-12 py-8">
         {/* HELP */}
         <div>
-          <h3 className="mb-6 text-lg font-bold">Help</h3>
+          <h3 className="mb-6 text-sm font-bold">Help</h3>
 
           <div className="space-y-3 text-sm text-pink-100">
             <Link href="#" className="block hover:text-white">
@@ -34,7 +34,7 @@ export default function Footer() {
 
         {/* ABOUT */}
         <div>
-          <h3 className="mb-6 text-lg font-bold">About</h3>
+          <h3 className="mb-6 text-sm font-bold">About Us</h3>
 
           <div className="space-y-3 text-sm text-pink-100">
             <Link href="#" className="block hover:text-white">
@@ -61,7 +61,7 @@ export default function Footer() {
 
         {/* SHOP */}
         <div>
-          <h3 className="mb-6 text-lg font-bold">Shop</h3>
+          <h3 className="mb-6 text-sm font-bold">Shop</h3>
 
           <div className="space-y-3 text-sm text-pink-100">
             <Link href="/products" className="block hover:text-white">
@@ -88,7 +88,7 @@ export default function Footer() {
 
         {/* NEWSLETTER */}
         <div>
-          <h3 className="mb-6 text-lg font-bold">Be the first to know!</h3>
+          <h3 className="mb-6 text-sm font-bold">Be the first to know!</h3>
 
           <div className="flex overflow-hidden rounded-xl bg-white">
             <input
@@ -102,8 +102,8 @@ export default function Footer() {
             </button>
           </div>
 
-          <p className="mt-5 text-sm text-pink-100">
-            Receive the latest kawaii news and special offers.
+          <p className="mt-5 text-[13px] text-pink-100">
+            Receive the latest kawaii news and deals!
           </p>
 
           <div className="mt-6 flex gap-4">
@@ -111,17 +111,17 @@ export default function Footer() {
 
             {/* <Instagram className="cursor-pointer hover:scale-110 transition" /> */}
 
-            <Music2 className="cursor-pointer hover:scale-110 transition" />
+            {/* <Music2 className="cursor-pointer hover:scale-110 transition" />
 
-            <Heart className="cursor-pointer hover:scale-110 transition" />
+            <Heart className="cursor-pointer hover:scale-110 transition" /> */}
           </div>
         </div>
       </div>
 
       {/* COPYRIGHT */}
-      <div className="border-t border-pink-300/40 px-6 py-5 text-center text-xs text-pink-100">
-        © {new Date().getFullYear()} Bliin — Built for educational purposes.
-        Inspired by Blippo.com.
+      <div className=" border-pink-300/40 px-6 pb-10 pt-3 text-center text-[10px] text-pink-100">
+        Copyright © {new Date().getFullYear()} Bliin — Built for educational
+        purposes. Inspired by Blippo.com.
       </div>
     </footer>
   );

@@ -6,6 +6,8 @@ import LogoutButton from "./LogoutButton";
 
 import NavbarSearch from "./NavbarSearch";
 import CartButton from "./CartButton";
+import NavItem from "./NavItem";
+import MegaMenu from "./MegaMenu";
 
 export default async function Navbar() {
   const cookieStore = await cookies();
@@ -113,6 +115,24 @@ export default async function Navbar() {
 
         <NavItem title="SALE" />
       </section> */}
+        <div className="sticky top-0 z-20 bg-white">
+        <section className="flex justify-center gap-12 border-gray-100 mt-3">
+          <NavItem title="WHAT'S NEW" />
+
+          <NavItem title="POPULAR ITEMS" />
+          <NavItem title="SCHOOL & OFFICE" />
+          <NavItem title="CLOTHING & ACCESORIES" />
+
+          <MegaMenu />
+
+          <NavItem title="SALE" />
+        </section>
+        <div className="flex  justify-center bg-ungu p-2">
+          <strong className="text-[#858ad6] text-[12px]">
+            2,900 japanese favorite*
+          </strong>
+        </div>
+      </div>
     </>
   );
 }

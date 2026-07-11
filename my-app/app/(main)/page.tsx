@@ -9,7 +9,7 @@ import NavItem from "@/components/NavItem";
 export default function Home() {
   return (
     <>
-      <div className="sticky top-0 z-20 bg-white">
+      {/* <div className="sticky top-0 z-20 bg-white">
         <section className="flex justify-center gap-12 border-gray-100 mt-3">
           <NavItem title="WHAT'S NEW" />
 
@@ -26,7 +26,7 @@ export default function Home() {
             2,900 japanese favorite*
           </strong>
         </div>
-      </div>
+      </div> */}
       <Banner />
       <DetailInfo />
       {/* <FeaturedProduct /> */}

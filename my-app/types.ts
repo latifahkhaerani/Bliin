@@ -1,5 +1,5 @@
 export type ProductType = {
-  _id: number;
+  _id: string;
   name: string;
   slug: string;
   description: string;
@@ -22,4 +22,13 @@ export type ProductType = {
 
   createdAt: Date;
   updatedAt: Date;
+};
+
+export type WishlistType = {
+  _id: string;
+  userId: string;
+  productId: string;
+  createdAt: string;
+  updatedAt: string;
+  product: ProductType;
 };

@@ -1,10 +1,9 @@
-import { Heart, ShoppingBag, User } from "lucide-react";
+import { Heart, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import LogoutButton from "./LogoutButton";
-import NavItem from "./NavItem";
-import MegaMenu from "./MegaMenu";
+
 import NavbarSearch from "./NavbarSearch";
 import CartButton from "./CartButton";
 
@@ -103,7 +102,7 @@ export default async function Navbar() {
       </section>
 
       {/* NAVIGATION */}
-      <section className="flex justify-center gap-12 border-gray-100 mt-3">
+      {/* <section className="flex justify-center gap-12 border-gray-100 mt-3">
         <NavItem title="WHAT'S NEW" />
 
         <NavItem title="POPULAR ITEMS" />
@@ -113,7 +112,7 @@ export default async function Navbar() {
         <MegaMenu />
 
         <NavItem title="SALE" />
-      </section>
+      </section> */}
     </>
   );
 }

@@ -48,7 +48,7 @@ export default function FeaturedProductList({ products }: Props) {
   }, []);
 
   return (
-    <div className="grid grid-cols-5 gap-6 px-8">
+    <div className="grid grid-cols-5 gap-6 px-10">
       {products.map((product) => {
         const isWishlist = wishlist.includes(product._id);
 
@@ -78,24 +78,23 @@ export default function FeaturedProductList({ products }: Props) {
               />
             </div>
 
-            <div className="mt-4 text-center">
-              <h3 className="min-h-15 text-xl text-gray-600">{product.name}</h3>
-
-              <div className="mt-2 flex items-center justify-center gap-2">
-                <span className="text-xl">{product.price}</span>
+            <div className="mt-2 text-center">
+              <p className="text-sm line-clamp-1 text-gray-600">
+                {product.name}
+              </p>
+              <div className="mt-2 flex items-center text-primary justify-center gap-2">
+                <span className="text-lg">US$ {product.price}</span>
 
                 {product.originalPrice && (
-                  <span className="text-base text-gray-400 line-through">
-                    {product.originalPrice}
+                  <span className="text-[14px] text-gray-400 line-through">
+                    US$ {product.originalPrice}
                   </span>
                 )}
               </div>
 
               {product.reviews > 0 && (
-                <div className="mt-4 flex items-center justify-center gap-2">
-                  <span>{product.rating.toFixed(1)}</span>
-
-                  <span className="text-yellow-400">
+                <div className="mt-2 flex items-center justify-center gap-2">
+                  <span className="text-[#fcc600] text-[12px]">
                     {"★".repeat(Math.round(product.rating))}
                     {"☆".repeat(5 - Math.round(product.rating))}
                   </span>

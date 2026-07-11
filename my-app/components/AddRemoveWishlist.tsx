@@ -21,16 +21,6 @@ export default function AddRemoveWishlist({
     e.stopPropagation();
 
     try {
-      // const response = await fetch("/api/wishlist", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify({
-      //     productId,
-      //   }),
-      // });
-
       const response = await fetch("/api/wishlist", {
         method: isWishlist ? "DELETE" : "POST",
         headers: {
@@ -63,14 +53,16 @@ export default function AddRemoveWishlist({
       onClick={handleAddWishlist}
       className={
         variant === "card"
-          ? "absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white/80 transition hover:scale-110 hover:bg-white"
-          : "flex w-full items-center justify-center gap-2 rounded-lg  py-3 text-lg text-primary transition hover:opacity-80"
+          ? `absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full transition-all duration-200 hover:scale-110`
+          : `flex w-full items-center justify-center gap-2 rounded-xl border border-primary py-3 text-primary transition hover:bg-pink-50`
       }
     >
       <Heart
-        className={`${
-          variant === "card" ? "h-6 w-6" : "h-5 w-5"
-        } text-primary ${isWishlist ? "fill-current" : "fill-none"}`}
+        className={`h-5 w-5 transition-all duration-200 ${
+          isWishlist
+            ? "fill-white text-white drop-shadow-md"
+            : "fill-none text-white"
+        }`}
       />
 
       {variant === "detail" && <span>Add to Wishlist</span>}

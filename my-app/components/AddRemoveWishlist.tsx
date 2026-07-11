@@ -53,19 +53,40 @@ export default function AddRemoveWishlist({
       onClick={handleAddWishlist}
       className={
         variant === "card"
-          ? `absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full transition-all duration-200 hover:scale-110`
-          : `flex w-full items-center justify-center gap-2 rounded-xl border border-primary py-3 text-primary transition hover:bg-pink-50`
+          ? `absolute right-2 top-2
+         flex h-8 w-8 items-center justify-center
+         rounded-full
+         transition-all duration-200
+         hover:scale-110`
+          : `mt-1 flex w-full items-center justify-center gap-2
+         rounded-lg
+         bg-white
+         py-2.5
+         text-sm
+         font-medium
+         text-primary
+         transition-all duration-200
+         hover:border-primary
+         `
       }
     >
       <Heart
-        className={`h-5 w-5 transition-all duration-200 ${
-          isWishlist
+        className={`transition-all duration-200
+      ${variant === "card" ? "h-5 w-5" : "h-4 w-4"}
+      ${
+        variant === "card"
+          ? isWishlist
             ? "fill-white text-white drop-shadow-md"
             : "fill-none text-white"
-        }`}
+          : isWishlist
+            ? "fill-primary text-primary"
+            : "fill-none text-primary"
+      }`}
       />
 
-      {variant === "detail" && <span>Add to Wishlist</span>}
+      {variant === "detail" && (
+        <span>{isWishlist ? "Added to Wishlist" : "Add to Wishlist"}</span>
+      )}
     </button>
   );
 }

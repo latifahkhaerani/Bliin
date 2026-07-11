@@ -20,7 +20,7 @@ export async function proxy(request: Request) {
       id: string;
       email: string;
     };
-    console.log("Decoded token:", decoded);
+    // console.log("Decoded token:", decoded);
 
     // buat bikin req.loginInfo
     // Clone the request headers and set a new header `x-hello-from-proxy1`

@@ -2,6 +2,7 @@ import Image from "next/image";
 import WishlistButton from "@/components/WishlistButton";
 import { Metadata } from "next";
 import { ProductType } from "@/types";
+import { fredoka } from "../../layout";
 
 type Props = {
   params: Promise<{
@@ -50,7 +51,7 @@ export default async function ProductDetail({
   const product = await data.json();
 
   return (
-    <main className="mx-auto max-w-6xl px-10 py-8">
+    <main className="mx-auto max-w-5xl px-10 py-8">
       {/* BREADCRUMB */}
       <p className="mb-6 text-xs text-gray-400">
         Home &nbsp;›&nbsp; {product.name}
@@ -91,7 +92,7 @@ export default async function ProductDetail({
         {/* RIGHT */}
         <div>
           {/* TITLE */}
-          <h1 className="text-[32px] font-bold leading-tight text-primary">
+          <h1 className={`${fredoka.className} text-3xl text-primary`}>
             {product.name}
           </h1>
           {/* PRICE */}
@@ -124,37 +125,37 @@ export default async function ProductDetail({
 
           {/* CART */}
           <div className="mt-6 flex gap-3">
-            <div className="w-20 rounded-lg border border-gray-300 px-3 py-2">
-              <p className="text-[10px] text-gray-400">Quantity</p>
+            <div className="h-11 w-20 rounded-lg border border-gray-300 px-2 py-1">
+              <p className="text-[9px] text-gray-400">Quantity</p>
 
-              <select className="mt-1 w-full bg-transparent text-sm text-gray-600 outline-none">
+              <select className="w-full bg-transparent text-xs text-gray-700 outline-none">
                 <option>1</option>
                 <option>2</option>
                 <option>3</option>
               </select>
             </div>
 
-            <button className="flex-1 rounded-lg bg-primary text-sm font-medium text-white transition hover:opacity-90">
+            <button className="flex-1 rounded-xl h-11 bg-primary text-sm font-medium text-white transition hover:opacity-90">
               Add to Cart
             </button>
           </div>
 
           {/* WISHLIST */}
-          <div className="mt-3">
+          <div className="">
             <WishlistButton productId={product._id} />
           </div>
 
           {/* DESCRIPTION */}
-          <div className="mt-10">
-            <h2 className="mb-4 text-2xl font-bold text-primary">
+          <div className="mt-5">
+            <h2  className={`${fredoka.className} text-3xl text-primary`}>
               Product Details
             </h2>
 
-            <p className="text-[15px] leading-7 text-gray-500">
+            <p className="text-sm mt-3 leading-7 text-gray-500">
               {product.description}
             </p>
 
-            <ul className="mt-5 list-disc space-y-2 pl-6 text-[15px] text-gray-500">
+            <ul className="mt-5 list-disc space-y-2 pl-6 text-sm text-gray-500">
               {product.features.map((feature: string, idx: number) => (
                 <li key={idx}>{feature}</li>
               ))}

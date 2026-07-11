@@ -27,24 +27,15 @@ class WishlistModel {
         },
       ])
       .toArray();
-    console.log(JSON.stringify(wishlists, null, 2));
+
     return wishlists;
   }
 
   static async add(userId: string, productId: string) {
-    console.log("Checking duplicate...");
-
-    console.log({
-      userId,
-      productId,
-    });
-
     const findWishlist = await this.collection().findOne({
       userId: new ObjectId(userId),
       productId: new ObjectId(productId),
     });
-
-    console.log("Duplicate result:", findWishlist);
 
     if (findWishlist) {
       throw {

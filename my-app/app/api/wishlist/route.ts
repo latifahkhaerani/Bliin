@@ -32,12 +32,12 @@ export async function POST(request: Request) {
         status: 401,
       };
     }
-    console.log("=== POST WISHLIST ===");
-    console.log("Logged in user:", userId);
+    // console.log("=== POST WISHLIST ===");
+    // console.log("Logged in user:", userId);
 
     const body = await request.json();
 
-    console.log("Product:", body.productId);
+    // console.log("Product:", body.productId);
 
     // simpan ke wishlist
     const result = await WishlistModel.add(userId as string, body.productId);

@@ -7,7 +7,6 @@ export async function POST(request: Request) {
     const body = await request.json();
 
     const token = await UserModel.login(body);
-
     // cookies
     const cookieStore = await cookies();
     cookieStore.set({
@@ -20,7 +19,7 @@ export async function POST(request: Request) {
       { status: 200 },
     );
   } catch (error) {
-    console.log(error);
+    // console.log(error);
     return errorHandler(error);
   }
 }

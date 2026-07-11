@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { SubmitEvent, useState } from "react";
 import Swal from "sweetalert2";
 
@@ -129,9 +130,11 @@ export default function Register() {
               <div className="h-px flex-1 bg-gray-300" />
             </div>
             {/* LOGIN BUTTON */}
-            <button className=" h-15 w-full rounded-xl  text-[18px] font-semibold text-black transition hover:bg-grey-500 bg-[#f0f0f0]">
-              Already have an account?
-            </button>
+            <Link href="/login">
+              <button className=" h-15 w-full rounded-xl  text-[18px] font-semibold text-black transition hover:bg-grey-500 bg-[#f0f0f0]">
+                Already have an account?
+              </button>
+            </Link>
 
             {/* TERMS */}
             <p className="mt-6 text-center text-[14px] text-gray-500">

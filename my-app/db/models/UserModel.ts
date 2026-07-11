@@ -3,7 +3,6 @@ import { database } from "../config/mongodb";
 import * as z from "zod";
 import { compareSync } from "bcryptjs";
 import { sign } from "jsonwebtoken";
-import errorHandler from "@/helpers/errorHandler";
 
 const RegisSchema = z.object({
   email: z
@@ -63,8 +62,7 @@ class UserModel {
   }
 
   static async login(body: z.infer<typeof LoginSchema>) {
-    try {
-      /* 
+    /* 
         1. check email dan password dari body
         2. check ke db ada emailnya atau tidak -> jika tidak ada error (invalid email or password)
         3. check password match atau tidak (bcryptjs)
@@ -72,34 +70,35 @@ class UserModel {
         5.  a. token dikirim via cookies
             b. token direturn
     */
-      const validInput = LoginSchema.parse(body);
+    const validInput = LoginSchema.parse(body);
 
-      const findUser = await this.collection().findOne({
-        email: validInput.email,
-      });
+    const findUser = await this.collection().findOne({
+      email: validInput.email,
+    });
 
-      if (!findUser) {
-        throw { message: "Invalid email or password", status: 401 };
-      }
+    // console.log(findUser)
 
-      const password = await compareSync(body.password, findUser.password);
-
-      if (!password) {
-        throw { message: "Invalid email or password", status: 401 };
-      }
-
-      const token = sign(
-        {
-          id: findUser._id,
-          email: findUser.email,
-        },
-        process.env.JWT_SECRET as string,
-      );
-
-      return token;
-    } catch (error) {
-      return errorHandler(error);
+    if (!findUser) {
+      throw { message: "Invalid email or password", status: 401 };
     }
+
+    const password = await compareSync(body.password, findUser.password);
+
+    if (!password) {
+      throw { message: "Invalid email or password", status: 401 };
+    }
+
+    const token = sign(
+      {
+        id: findUser._id,
+        email: findUser.email,
+      },
+      process.env.JWT_SECRET as string,
+    );
+
+    console.log(true);
+
+    return token;
   }
 }
 

@@ -26,10 +26,7 @@ export default function Product() {
         <span>Products</span>
       </div>
 
-      {/* TITLE */}
-      <h1 className="mt-14 text-center text-5xl font-extrabold text-primary">
-        PRODUCTS
-      </h1>
+      
 
       {/* SEARCH */}
       <SearchBar keyword={keyword} setKeyword={setKeyword} />

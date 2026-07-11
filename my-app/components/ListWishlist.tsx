@@ -1,43 +1,79 @@
 "use client";
 
-import Image from "next/image";
 import { WishlistType } from "@/types";
+import Image from "next/image";
+import Link from "next/link";
+import { X } from "lucide-react";
 
 type Props = {
   wishlists: WishlistType[];
+  onRemoveWishlist: (productId: string) => void;
 };
 
-export default function ListWishlist({ wishlists }: Props) {
+export default function ListWishlist({ wishlists, onRemoveWishlist }: Props) {
   return (
-    <div className="grid grid-cols-4 gap-x-5 gap-y-10">
+    <div className="grid grid-cols-5 gap-x-7 gap-y-10 mt-10">
       {wishlists.map((wishlist) => {
         const product = wishlist.product;
 
         return (
-          <div key={wishlist._id} className="text-center">
-            <div className="relative aspect-square overflow-hidden rounded-2xl">
-              <Image
-                src={product.thumbnail}
-                alt={product.name}
-                fill
-                className="object-cover"
-              />
-
-              <button type="button" className="absolute right-4 top-4 text-3xl">
-                ×
+          <div key={wishlist._id} className="block min-w-0">
+            {/* IMAGE */}
+            <div className="relative aspect-square overflow-hidden rounded-2xl bg-[#fafafa]">
+              <button
+                type="button"
+                onClick={() => onRemoveWishlist(wishlist.productId)}
+                className="absolute right-2 top-2 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 shadow-md transition hover:scale-110 hover:bg-white"
+              >
+                <X size={16} className="text-gray-500" />
               </button>
+
+              <Link href={`/products/${product.slug}`}>
+                <Image
+                  src={
+                    product.images?.[1] ||
+                    product.images?.[0] ||
+                    product.thumbnail
+                  }
+                  alt={product.name}
+                  fill
+                  sizes="100vw"
+                  className="object-cover transition duration-300 hover:scale-105"
+                />
+              </Link>
             </div>
 
-            <h2 className="mt-3 text-xl text-gray-500">{product.name}</h2>
+            {/* INFO */}
+            <div className="mt-3 text-center">
+              <h3 className="mx-auto min-h-10 max-w-[95%] line-clamp-2 text-sm text-gray-600">
+                {product.name}
+              </h3>
 
-            <p className="mt-2 text-gray-500">US$ {product.price.toFixed(2)}</p>
+              <div className=" flex items-center justify-center gap-2">
+                <span className="text-lg font-medium text-primary">
+                  US$ {product.price}
+                </span>
 
-            <button
-              type="button"
-              className="mt-3 w-full rounded-xl bg-pink-400 py-3 text-xl text-white"
-            >
-              Add to Cart
-            </button>
+                {product.originalPrice && (
+                  <span className="text-sm text-gray-400 line-through">
+                    US$ {product.originalPrice}
+                  </span>
+                )}
+              </div>
+
+              {product.reviews > 0 && (
+                <div className="mt-2 flex items-center justify-center gap-1">
+                  <span className="text-[12px] text-[#FCC600]">
+                    {"★".repeat(Math.round(product.rating))}
+                    {"☆".repeat(5 - Math.round(product.rating))}
+                  </span>
+
+                  <span className="text-[11px] text-gray-400">
+                    ({product.reviews})
+                  </span>
+                </div>
+              )}
+            </div>
           </div>
         );
       })}

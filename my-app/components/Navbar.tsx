@@ -16,24 +16,6 @@ export default async function Navbar() {
 
   const isLogin = !!authorization;
 
-  let wishlistCount = 0;
-
-  if (isLogin) {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/api/wishlist`,
-      {
-        headers: {
-          Cookie: cookieStore.toString(),
-        },
-        cache: "no-store",
-      },
-    );
-
-    if (response.ok) {
-      const wishlists = await response.json();
-      wishlistCount = wishlists.length;
-    }
-  }
   return (
     <>
       <div className="flex justify-center bg-primary p-2">
@@ -91,12 +73,6 @@ export default async function Navbar() {
 
           <Link href="/wishlist" className="relative">
             <Heart className="text-abu" />
-
-            {wishlistCount > 0 && (
-              <span className=" absolute top-0 -right-1.5 flex h-3 w-3 items-center justify-center rounded-full bg-abu text-[9px] font-bold text-white">
-                {wishlistCount}
-              </span>
-            )}
           </Link>
 
           <CartButton />
@@ -115,7 +91,7 @@ export default async function Navbar() {
 
         <NavItem title="SALE" />
       </section> */}
-        <div className="sticky top-0 z-20 bg-white">
+      <div className="sticky top-0 z-20 bg-white">
         <section className="flex justify-center gap-12 border-gray-100 mt-3">
           <NavItem title="WHAT'S NEW" />
 

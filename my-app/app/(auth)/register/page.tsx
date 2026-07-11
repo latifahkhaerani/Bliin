@@ -46,100 +46,108 @@ export default function Register() {
 
   return (
     <>
-      <main className="relative flex min-h-screen justify-center bg-white px-6">
+      <main className="flex min-h-screen justify-center bg-white px-6 pt-2 pb-12">
         <div className="flex w-full max-w-113.75 flex-col">
           {/* LOGO */}
-          <div className="flex justify-center pt-12.5">
+          <div className="flex justify-center">
             <Image
               src="/logo.png"
-              alt="Bliiin"
-              width={125}
-              height={60}
-              className="object-contain w-auto h-auto"
+              alt="Bliin"
+              width={115}
+              height={55}
+              className="h-auto w-auto object-contain"
             />
           </div>
 
           {/* FORM */}
-          <form onSubmit={handleRegister} className="mt-10">
-            <h2 className="text-[30px] font-bold tracking-tight text-black">
+          <form onSubmit={handleRegister} className="mt-2">
+            <h2 className="text-[28px] font-bold tracking-tight text-black">
               Sign up
             </h2>
 
-            <p className="mt-1 text-[17px] text-gray-500">
+            <p className="mt-1 text-[15px] text-gray-500">
               Sign up or already have an account
             </p>
 
-            {/* INPUT */}
-            <div className="mt-6 flex h-14.5 items-center rounded-xl border border-gray-300 px-4">
+            {/* USERNAME */}
+            <div className="mt-5 flex h-12 items-center rounded-xl border border-gray-300 px-4">
               <input
                 type="text"
                 name="username"
                 placeholder="Username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
+                className="flex-1 text-[15px] outline-none placeholder:text-gray-500"
               />
             </div>
 
-            <div className="mt-6 flex h-14.5 items-center rounded-xl border border-gray-300 px-4">
+            {/* NAME */}
+            <div className="mt-3 flex h-12 items-center rounded-xl border border-gray-300 px-4">
               <input
                 type="text"
                 name="name"
                 placeholder="Name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
+                className="flex-1 text-[15px] outline-none placeholder:text-gray-500"
               />
             </div>
 
-            <div className="mt-6 flex h-14.5 items-center rounded-xl border border-gray-300 px-4">
+            {/* EMAIL */}
+            <div className="mt-3 flex h-12 items-center rounded-xl border border-gray-300 px-4">
               <input
                 type="email"
                 name="email"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
+                className="flex-1 text-[15px] outline-none placeholder:text-gray-500"
               />
             </div>
 
-            <div className="mt-5 flex h-14.5 items-center rounded-xl border border-gray-300 px-4">
+            {/* PASSWORD */}
+            <div className="mt-3 flex h-12 items-center rounded-xl border border-gray-300 px-4">
               <input
                 type="password"
                 name="password"
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="flex-1 text-[16px] text-black outline-none placeholder:text-gray-500"
+                className="flex-1 text-[15px] outline-none placeholder:text-gray-500"
               />
             </div>
 
+            {/* SUBMIT */}
             <button
               type="submit"
-              className="mt-6 h-15 w-full rounded-xl bg-[#5433EB] text-[18px] font-semibold text-white transition hover:bg-[#4828d8]"
+              className="mt-5 h-12 w-full rounded-xl bg-[#5433EB] text-[16px] font-semibold text-white transition hover:bg-[#4828d8]"
             >
               Submit
             </button>
 
             {/* DIVIDER */}
-            <div className="my-6 flex items-center gap-4">
+            <div className="my-5 flex items-center gap-4">
               <div className="h-px flex-1 bg-gray-300" />
 
-              <span className="text-gray-500">or</span>
+              <span className="text-sm text-gray-500">or</span>
 
               <div className="h-px flex-1 bg-gray-300" />
             </div>
-            {/* LOGIN BUTTON */}
+
+            {/* LOGIN */}
             <Link href="/login">
-              <button className=" h-15 w-full rounded-xl  text-[18px] font-semibold text-black transition hover:bg-grey-500 bg-[#f0f0f0]">
+              <button
+                type="button"
+                className="h-12 w-full rounded-xl bg-[#f0f0f0] text-[16px] font-semibold text-black transition hover:bg-gray-200"
+              >
                 Already have an account?
               </button>
             </Link>
 
             {/* TERMS */}
-            <p className="mt-6 text-center text-[14px] text-gray-500">
-              By continuing, you agree to our
-              <button className="underline underline-offset-2">
+            <p className="mt-5 pb-6 text-center text-[13px] leading-5 text-gray-500">
+              By continuing, you agree to our{" "}
+              <button type="button" className="underline underline-offset-2">
                 Terms of service
               </button>
             </p>

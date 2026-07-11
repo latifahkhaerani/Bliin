@@ -1,5 +1,6 @@
 "use client";
 
+import ListWishlist from "@/components/ListWishlist";
 import { WishlistType } from "@/types";
 import { X } from "lucide-react";
 import Image from "next/image";
@@ -71,70 +72,10 @@ export default function Wishlist() {
           </Link>
         </div>
       ) : (
-        <div className="mt-14 grid grid-cols-5 gap-6">
-          {wishlists.map((wishlist) => {
-            const product = wishlist.product;
-
-            return (
-              <div key={wishlist._id} className="min-w-0">
-                <div className="relative aspect-square overflow-hidden rounded-2xl">
-                  <button
-                    type="button"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      e.stopPropagation();
-                      handleRemoveWishlist(wishlist.productId);
-                    }}
-                    className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white shadow hover:bg-gray-100"
-                  >
-                    <X size={18} />
-                  </button>
-
-                  <Link href={`/products/${product.slug}`}>
-                    <Image
-                      src={
-                        product.images?.[1] ||
-                        product.images?.[0] ||
-                        product.thumbnail
-                      }
-                      alt={product.name}
-                      fill
-                      sizes="100vw"
-                      className="object-cover"
-                    />
-                  </Link>
-                </div>
-
-                <div className="mt-4 text-center">
-                  <h3 className="min-h-15 text-xl text-gray-600">
-                    {product.name}
-                  </h3>
-
-                  <div className="mt-2 flex items-center justify-center gap-2">
-                    <span className="text-xl">{product.price}</span>
-
-                    {product.originalPrice && (
-                      <span className="text-base text-gray-400 line-through">
-                        {product.originalPrice}
-                      </span>
-                    )}
-                  </div>
-
-                  {product.reviews > 0 && (
-                    <div className="mt-4 flex items-center justify-center gap-2">
-                      <span>{product.rating.toFixed(1)}</span>
-
-                      <span className="text-yellow-400">
-                        {"★".repeat(Math.round(product.rating))}
-                        {"☆".repeat(5 - Math.round(product.rating))}
-                      </span>
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })}
-        </div>
+        <ListWishlist
+          wishlists={wishlists}
+          onRemoveWishlist={handleRemoveWishlist}
+        />
       )}
     </main>
   );

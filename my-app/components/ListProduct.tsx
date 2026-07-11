@@ -61,7 +61,7 @@ export default function ListProduct({ keyword }: Props) {
   }, [keyword]);
 
   return (
-    <section className="bg-white px-8 py-10">
+    <section className="bg-white px-8 pb-10">
       <InfiniteScroll
         dataLength={products.length}
         next={() => {
@@ -86,19 +86,20 @@ export default function ListProduct({ keyword }: Props) {
               <Link
                 href={`/products/${product.slug}`}
                 key={product._id}
-                className="min-w-0"
+                className="block min-w-0 transition hover:opacity-95"
               >
-                <div className="relative aspect-square overflow-hidden rounded-2xl">
+                {/* IMAGE */}
+                <div className="relative aspect-square overflow-hidden rounded-2xl bg-[#fafafa]">
                   <Image
                     src={
                       product.images?.[1] ||
-                      product.images[0] ||
+                      product.images?.[0] ||
                       product.thumbnail
                     }
                     alt={product.name}
                     fill
                     sizes="100vw"
-                    className="object-cover"
+                    className="object-cover transition duration-300 hover:scale-105"
                   />
 
                   <AddRemoveWishlist
@@ -108,33 +109,37 @@ export default function ListProduct({ keyword }: Props) {
                   />
                 </div>
 
-                <div className="mt-4 text-center">
-                  <h3 className="min-h-15 text-xl text-gray-600">
+                {/* INFO */}
+                <div className="mt-3 text-center">
+                  {/* NAME */}
+                  <h3 className="mx-auto min-h-10 max-w-[95%] text-sm text-gray-600 line-clamp-2">
                     {product.name}
                   </h3>
 
                   {/* PRICE */}
-                  <div className="mt-2 flex items-center justify-center gap-2">
-                    <span className={`text-xl`}>{product.price}</span>
+                  <div className="mt-0 flex items-center justify-center gap-2">
+                    <span className="text-lg font-medium text-primary">
+                      US$ {product.price}
+                    </span>
 
                     {product.originalPrice && (
-                      <span className="text-base text-gray-400 line-through">
-                        {product.originalPrice}
+                      <span className="text-sm text-gray-400 line-through">
+                        US$ {product.originalPrice}
                       </span>
                     )}
                   </div>
 
-                  {/* REVIEWS */}
-                  {product.reviews && (
-                    <div className="mt-4 flex items-center justify-center gap-2">
-                      <div className="flex items-center gap-2">
-                        <span>{product.rating.toFixed(1)}</span>
+                  {/* RATING */}
+                  {product.reviews > 0 && (
+                    <div className="mt-2 flex items-center justify-center gap-1">
+                      <span className="text-[12px] text-[#FCC600]">
+                        {"★".repeat(Math.round(product.rating))}
+                        {"☆".repeat(5 - Math.round(product.rating))}
+                      </span>
 
-                        <span className="text-yellow-400">
-                          {"★".repeat(Math.round(product.rating))}
-                          {"☆".repeat(5 - Math.round(product.rating))}
-                        </span>
-                      </div>
+                      <span className="text-[11px] text-gray-400">
+                        ({product.reviews})
+                      </span>
                     </div>
                   )}
                 </div>

@@ -1,562 +1,1462 @@
 {
   "users": [],
   "wishlist": [],
-  "pokemon": [
+  "products": [
     {
-      "id": "10206403068225",
-      "title": "Blippo Kawaii Mixed Lucky Bag",
-      "price": "US$ 45.00",
-      "originalPrice": "US$ 85.00",
-      "image": "//www.blippo.com/cdn/shop/files/20241220-2_604cfcd9-048b-4008-88d7-0c7eb3ff8490_2048x.jpg?v=1780677040",
-      "url": "https://www.blippo.com/products/blippo-surprise-kawaii-mixed-bag",
+      "name": "Blippo Kawaii Mixed Lucky Bag",
+      "slug": "blippo-surprise-kawaii-mixed-bag",
+      "description": "Blippo Kawaii Mixed Lucky Bag is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Blippo Kawaii Mixed Lucky Bag with premium quality and adorable kawaii design.",
+      "price": 45.0,
+      "originalPrice": 85.0,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20241220-2_604cfcd9-048b-4008-88d7-0c7eb3ff8490_2048x.jpg?v=1780677040",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20241220-2_604cfcd9-048b-4008-88d7-0c7eb3ff8490_2048x.jpg?v=1780677040"
+      ],
       "rating": 4.47,
-      "reviews": 341
+      "reviews": 341,
+      "stock": 15,
+      "freeShipping": true,
+      "rewards": 4500,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "bag"],
+      "createdAt": "2026-07-08T08:34:42.602416+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602416+00:00"
     },
     {
-      "id": "10266419134785",
-      "title": "Pompompurin's Sweetest Lucky Bags",
-      "price": "US$ 75.00",
+      "name": "Pompompurin's Sweetest Lucky Bags",
+      "slug": "pompompurins-sweetest-lucky-bags",
+      "description": "Pompompurin's Sweetest Lucky Bags is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pompompurin's Sweetest Lucky Bags with premium quality and adorable kawaii design.",
+      "price": 75.0,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/PompomUltimate1_2048x.png?v=1782284801",
-      "url": "https://www.blippo.com/products/pompompurins-sweetest-lucky-bags",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/PompomUltimate1_2048x.png?v=1782284801",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/PompomUltimate1_2048x.png?v=1782284801"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 11,
+      "freeShipping": true,
+      "rewards": 7500,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "bag"],
+      "createdAt": "2026-07-08T08:34:42.602454+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602454+00:00"
     },
     {
-      "id": "10202674233665",
-      "title": "Pokemon Lucky Bags",
-      "price": "US$ 75.00",
+      "name": "Pokemon Lucky Bags",
+      "slug": "pokemon-lucky-bags",
+      "description": "Pokemon Lucky Bags is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Lucky Bags with premium quality and adorable kawaii design.",
+      "price": 75.0,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/JCSBLTk10_Collect_em_all_Shopify_General_Images_Instagram_Post_45_2048x.png?v=1782298232",
-      "url": "https://www.blippo.com/products/pokemon-lucky-bags",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/JCSBLTk10_Collect_em_all_Shopify_General_Images_Instagram_Post_45_2048x.png?v=1782298232",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/JCSBLTk10_Collect_em_all_Shopify_General_Images_Instagram_Post_45_2048x.png?v=1782298232"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 6,
+      "freeShipping": true,
+      "rewards": 7500,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon", "bag"],
+      "createdAt": "2026-07-08T08:34:42.602465+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602465+00:00"
     },
     {
-      "id": "10206403723585",
-      "title": "Blippo Candy Rescue Bag",
-      "price": "US$ 25.90",
-      "originalPrice": "US$ 42.90",
-      "image": "//www.blippo.com/cdn/shop/files/candybagproduct_1080_2048x.jpg?v=1774582506",
-      "url": "https://www.blippo.com/products/blippo-surprise-candy-bag",
+      "name": "Blippo Candy Rescue Bag",
+      "slug": "blippo-surprise-candy-bag",
+      "description": "Blippo Candy Rescue Bag is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Blippo Candy Rescue Bag with premium quality and adorable kawaii design.",
+      "price": 25.9,
+      "originalPrice": 42.9,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/candybagproduct_1080_2048x.jpg?v=1774582506",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/candybagproduct_1080_2048x.jpg?v=1774582506"
+      ],
       "rating": 4.68,
-      "reviews": 134
+      "reviews": 134,
+      "stock": 12,
+      "freeShipping": false,
+      "rewards": 2590,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "bag"],
+      "createdAt": "2026-07-08T08:34:42.602475+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602475+00:00"
     },
     {
-      "id": "10202675151169",
-      "title": "My Melody & Kuromi Chill Time Trifold Wallet",
-      "price": "US$ 38.32",
-      "originalPrice": "US$ 47.90",
-      "image": "//www.blippo.com/cdn/shop/files/20260303-32_2048x.jpg?v=1782282849",
-      "url": "https://www.blippo.com/products/my-melody-kuromi-chill-time-trifold-wallet",
-      "rating": null,
-      "reviews": 0
+      "name": "My Melody & Kuromi Chill Time Trifold Wallet",
+      "slug": "my-melody-kuromi-chill-time-trifold-wallet",
+      "description": "My Melody & Kuromi Chill Time Trifold Wallet is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute My Melody & Kuromi Chill Time Trifold Wallet with premium quality and adorable kawaii design.",
+      "price": 38.32,
+      "originalPrice": 47.9,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20260303-32_2048x.jpg?v=1782282849",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20260303-32_2048x.jpg?v=1782282849"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 11,
+      "freeShipping": true,
+      "rewards": 3832,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "wallet"],
+      "createdAt": "2026-07-08T08:34:42.602491+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602491+00:00"
     },
     {
-      "id": "10207514526017",
-      "title": "Sirotan x Sanrio Characters Round Coin Purse - Pompompurin",
-      "price": "US$ 28.90",
+      "name": "Sirotan x Sanrio Characters Round Coin Purse - Pompompurin",
+      "slug": "sirotan-x-sanrio-characters-round-coin-purse-pompompurin",
+      "description": "Sirotan x Sanrio Characters Round Coin Purse - Pompompurin is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Sirotan x Sanrio Characters Round Coin Purse - Pompompurin with premium quality and adorable kawaii design.",
+      "price": 28.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20231219-187_2048x.jpg?v=1782296796",
-      "url": "https://www.blippo.com/products/sirotan-x-sanrio-characters-round-coin-purse-pompompurin",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20231219-187_2048x.jpg?v=1782296796",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20231219-187_2048x.jpg?v=1782296796"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 5,
+      "freeShipping": false,
+      "rewards": 2890,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "sanrio"],
+      "createdAt": "2026-07-08T08:34:42.602503+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602503+00:00"
     },
     {
-      "id": "10202677051713",
-      "title": "My Melody & Kuromi Pastel Dreamland Triple Pouch",
-      "price": "US$ 24.00",
+      "name": "My Melody & Kuromi Pastel Dreamland Triple Pouch",
+      "slug": "my-melody-kuromi-pastel-dreamland-triple-pouch",
+      "description": "My Melody & Kuromi Pastel Dreamland Triple Pouch is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute My Melody & Kuromi Pastel Dreamland Triple Pouch with premium quality and adorable kawaii design.",
+      "price": 24.0,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20260220-78_2048x.jpg?v=1782298209",
-      "url": "https://www.blippo.com/products/my-melody-kuromi-pastel-dreamland-triple-pouch",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20260220-78_2048x.jpg?v=1782298209",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20260220-78_2048x.jpg?v=1782298209"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 14,
+      "freeShipping": false,
+      "rewards": 2400,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pouch"],
+      "createdAt": "2026-07-08T08:34:42.602514+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602514+00:00"
     },
     {
-      "id": "10207461671233",
-      "title": "Sirotan x Sanrio Characters Round Coin Purse - Hello Kitty",
-      "price": "US$ 23.12",
-      "originalPrice": "US$ 28.90",
-      "image": "//www.blippo.com/cdn/shop/files/20231219-189_2048x.jpg?v=1782282480",
-      "url": "https://www.blippo.com/products/sirotan-x-sanrio-characters-round-coin-purse-hello-kitty",
-      "rating": null,
-      "reviews": 0
+      "name": "Sirotan x Sanrio Characters Round Coin Purse - Hello Kitty",
+      "slug": "sirotan-x-sanrio-characters-round-coin-purse-hello-kitty",
+      "description": "Sirotan x Sanrio Characters Round Coin Purse - Hello Kitty is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Sirotan x Sanrio Characters Round Coin Purse - Hello Kitty with premium quality and adorable kawaii design.",
+      "price": 23.12,
+      "originalPrice": 28.9,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20231219-189_2048x.jpg?v=1782282480",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20231219-189_2048x.jpg?v=1782282480"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 7,
+      "freeShipping": false,
+      "rewards": 2312,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "sanrio"],
+      "createdAt": "2026-07-08T08:34:42.602523+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602523+00:00"
     },
     {
-      "id": "10209440891201",
-      "title": "Re-Ment Cinnamoroll's Living Room",
-      "price": "US$ 20.30",
-      "originalPrice": "US$ 29.00",
-      "image": "//www.blippo.com/cdn/shop/files/48997-20230323A_2048x.jpg?v=1774849725",
-      "url": "https://www.blippo.com/products/re-ment-cinnamorolls-living-room",
-      "rating": null,
-      "reviews": 0
+      "name": "Re-Ment Cinnamoroll's Living Room",
+      "slug": "re-ment-cinnamorolls-living-room",
+      "description": "Re-Ment Cinnamoroll's Living Room is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Re-Ment Cinnamoroll's Living Room with premium quality and adorable kawaii design.",
+      "price": 20.3,
+      "originalPrice": 29.0,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/48997-20230323A_2048x.jpg?v=1774849725",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/48997-20230323A_2048x.jpg?v=1774849725"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 9,
+      "freeShipping": false,
+      "rewards": 2030,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602531+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602531+00:00"
     },
     {
-      "id": "10206516183361",
-      "title": "Re-Ment I Love Pompompurin Cooking",
-      "price": "US$ 18.90",
+      "name": "Re-Ment I Love Pompompurin Cooking",
+      "slug": "re-ment-i-love-pompompurin-cooking",
+      "description": "Re-Ment I Love Pompompurin Cooking is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Re-Ment I Love Pompompurin Cooking with premium quality and adorable kawaii design.",
+      "price": 18.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20251112-83_2048x.jpg?v=1781659559",
-      "url": "https://www.blippo.com/products/re-ment-i-love-pompompurin-cooking",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20251112-83_2048x.jpg?v=1781659559",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20251112-83_2048x.jpg?v=1781659559"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 4,
+      "freeShipping": false,
+      "rewards": 1890,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602537+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602537+00:00"
     },
     {
-      "id": "10206535418177",
-      "title": "Re-Ment Cinnamoroll Market",
-      "price": "US$ 17.90",
+      "name": "Re-Ment Cinnamoroll Market",
+      "slug": "re-ment-cinnamoroll-market",
+      "description": "Re-Ment Cinnamoroll Market is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Re-Ment Cinnamoroll Market with premium quality and adorable kawaii design.",
+      "price": 17.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/200251030-67_2048x.jpg?v=1781578568",
-      "url": "https://www.blippo.com/products/re-ment-cinnamoroll-market",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/200251030-67_2048x.jpg?v=1781578568",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/200251030-67_2048x.jpg?v=1781578568"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 15,
+      "freeShipping": false,
+      "rewards": 1790,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602544+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602544+00:00"
     },
     {
-      "id": "10202678395201",
-      "title": "Sanrio Characters Bubble Bathtime Figure",
-      "price": "US$ 16.73",
-      "originalPrice": "US$ 23.90",
-      "image": "//www.blippo.com/cdn/shop/files/20251204-215_2048x.jpg?v=1782283754",
-      "url": "https://www.blippo.com/products/sanrio-characters-bubble-bathtime-figure",
-      "rating": null,
-      "reviews": 0
+      "name": "Sanrio Characters Bubble Bathtime Figure",
+      "slug": "sanrio-characters-bubble-bathtime-figure",
+      "description": "Sanrio Characters Bubble Bathtime Figure is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Sanrio Characters Bubble Bathtime Figure with premium quality and adorable kawaii design.",
+      "price": 16.73,
+      "originalPrice": 23.9,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20251204-215_2048x.jpg?v=1782283754",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20251204-215_2048x.jpg?v=1782283754"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 4,
+      "freeShipping": false,
+      "rewards": 1673,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "sanrio", "figure"],
+      "createdAt": "2026-07-08T08:34:42.602552+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602552+00:00"
     },
     {
-      "id": "10202678427969",
-      "title": "Sanrio Characters Crane Game Figure",
-      "price": "US$ 16.73",
-      "originalPrice": "US$ 23.90",
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/sanrio-characters-crane-game-figure",
-      "rating": null,
-      "reviews": 0
+      "name": "Sanrio Characters Crane Game Figure",
+      "slug": "sanrio-characters-crane-game-figure",
+      "description": "Sanrio Characters Crane Game Figure is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Sanrio Characters Crane Game Figure with premium quality and adorable kawaii design.",
+      "price": 16.73,
+      "originalPrice": 23.9,
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 13,
+      "freeShipping": false,
+      "rewards": 1673,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "sanrio", "figure"],
+      "createdAt": "2026-07-08T08:34:42.602559+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602559+00:00"
     },
     {
-      "id": "10207353274689",
-      "title": "Re-Ment Kuromi Words Collection",
-      "price": "US$ 15.33",
-      "originalPrice": "US$ 21.90",
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/re-ment-kuromi-words-collection",
-      "rating": null,
-      "reviews": 0
+      "name": "Re-Ment Kuromi Words Collection",
+      "slug": "re-ment-kuromi-words-collection",
+      "description": "Re-Ment Kuromi Words Collection is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Re-Ment Kuromi Words Collection with premium quality and adorable kawaii design.",
+      "price": 15.33,
+      "originalPrice": 21.9,
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 11,
+      "freeShipping": false,
+      "rewards": 1533,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602566+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602566+00:00"
     },
     {
-      "id": "10207245828417",
-      "title": "Re-Ment Cinnamoroll Style Shop",
-      "price": "US$ 14.63",
-      "originalPrice": "US$ 20.90",
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/re-ment-cinnamoroll-style-shop",
-      "rating": null,
-      "reviews": 0
+      "name": "Re-Ment Cinnamoroll Style Shop",
+      "slug": "re-ment-cinnamoroll-style-shop",
+      "description": "Re-Ment Cinnamoroll Style Shop is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Re-Ment Cinnamoroll Style Shop with premium quality and adorable kawaii design.",
+      "price": 14.63,
+      "originalPrice": 20.9,
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 12,
+      "freeShipping": false,
+      "rewards": 1463,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602573+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602573+00:00"
     },
     {
-      "id": "10206762729793",
-      "title": "Kuromi Spooky Night Plushie - Medium",
-      "price": "US$ 12.53",
-      "originalPrice": "US$ 17.90",
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/kuromi-spooky-night-plushie-medium",
+      "name": "Kuromi Spooky Night Plushie - Medium",
+      "slug": "kuromi-spooky-night-plushie-medium",
+      "description": "Kuromi Spooky Night Plushie - Medium is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Kuromi Spooky Night Plushie - Medium with premium quality and adorable kawaii design.",
+      "price": 12.53,
+      "originalPrice": 17.9,
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
       "rating": 5,
-      "reviews": 1
+      "reviews": 1,
+      "stock": 5,
+      "freeShipping": false,
+      "rewards": 1253,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "plush"],
+      "createdAt": "2026-07-08T08:34:42.602581+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602581+00:00"
     },
     {
-      "title": null,
-      "price": null,
+      "name": "Kawaii Item 17",
+      "slug": "kawaii-item-17",
+      "description": "Kawaii Item 17 is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Kawaii Item 17 with premium quality and adorable kawaii design.",
+      "price": 39.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20220713_524_2048x.jpg?v=1782291037",
-      "url": null,
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20220713_524_2048x.jpg?v=1782291037",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20220713_524_2048x.jpg?v=1782291037"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 12,
+      "freeShipping": true,
+      "rewards": 3990,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602661+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602661+00:00"
     },
     {
-      "title": null,
-      "price": null,
+      "name": "Kawaii Item 18",
+      "slug": "kawaii-item-18",
+      "description": "Kawaii Item 18 is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Kawaii Item 18 with premium quality and adorable kawaii design.",
+      "price": 24.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20240111-37_2048x.jpg?v=1782289022",
-      "url": null,
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20240111-37_2048x.jpg?v=1782289022",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20240111-37_2048x.jpg?v=1782289022"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 7,
+      "freeShipping": false,
+      "rewards": 2490,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602674+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602674+00:00"
     },
     {
-      "title": null,
-      "price": null,
+      "name": "Kawaii Item 19",
+      "slug": "kawaii-item-19",
+      "description": "Kawaii Item 19 is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Kawaii Item 19 with premium quality and adorable kawaii design.",
+      "price": 24.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/49096-20260519A_2048x.jpg?v=1782198835",
-      "url": null,
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49096-20260519A_2048x.jpg?v=1782198835",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49096-20260519A_2048x.jpg?v=1782198835"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 11,
+      "freeShipping": false,
+      "rewards": 2490,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602682+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602682+00:00"
     },
     {
-      "title": null,
-      "price": null,
+      "name": "Kawaii Item 20",
+      "slug": "kawaii-item-20",
+      "description": "Kawaii Item 20 is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Kawaii Item 20 with premium quality and adorable kawaii design.",
+      "price": 39.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20240522-13_2048x.jpg?v=1782288045",
-      "url": null,
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20240522-13_2048x.jpg?v=1782288045",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20240522-13_2048x.jpg?v=1782288045"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 4,
+      "freeShipping": true,
+      "rewards": 3990,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602689+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602689+00:00"
     },
     {
-      "id": "10293569487169",
-      "title": "Chiikawa AcryMini Charm",
-      "price": "US$ 1.90",
+      "name": "Chiikawa AcryMini Charm",
+      "slug": "chiikawa-acrymini-charm",
+      "description": "Chiikawa AcryMini Charm is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa AcryMini Charm with premium quality and adorable kawaii design.",
+      "price": 1.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/49122_2048x.jpg?v=1782212051",
-      "url": "https://www.blippo.com/products/chiikawa-acrymini-charm",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49122_2048x.jpg?v=1782212051",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49122_2048x.jpg?v=1782212051"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 4,
+      "freeShipping": false,
+      "rewards": 190,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602696+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602696+00:00"
     },
     {
-      "id": "10207319032129",
-      "title": "Chiikawa Mitte Mini Flat Pouch",
-      "price": "US$ 23.90",
+      "name": "Chiikawa Mitte Mini Flat Pouch",
+      "slug": "chiikawa-mitte-mini-flat-pouch",
+      "description": "Chiikawa Mitte Mini Flat Pouch is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Mitte Mini Flat Pouch with premium quality and adorable kawaii design.",
+      "price": 23.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20250317-56_2048x.jpg?v=1782293598",
-      "url": "https://www.blippo.com/products/chiikawa-mitte-mini-flat-pouch",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20250317-56_2048x.jpg?v=1782293598",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20250317-56_2048x.jpg?v=1782293598"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 15,
+      "freeShipping": false,
+      "rewards": 2390,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pouch"],
+      "createdAt": "2026-07-08T08:34:42.602705+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602705+00:00"
     },
     {
-      "id": "10206860640577",
-      "title": "Chiikawa Manga Pen Stand",
-      "price": "US$ 16.90",
+      "name": "Chiikawa Manga Pen Stand",
+      "slug": "chiikawa-manga-pen-stand",
+      "description": "Chiikawa Manga Pen Stand is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Manga Pen Stand with premium quality and adorable kawaii design.",
+      "price": 16.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20250114-62_ed68630b-3da7-4f6d-996e-1e9792f4a7c6_2048x.jpg?v=1782286502",
-      "url": "https://www.blippo.com/products/chiikawa-manga-pen-stand",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20250114-62_ed68630b-3da7-4f6d-996e-1e9792f4a7c6_2048x.jpg?v=1782286502",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20250114-62_ed68630b-3da7-4f6d-996e-1e9792f4a7c6_2048x.jpg?v=1782286502"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 15,
+      "freeShipping": false,
+      "rewards": 1690,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.602994+00:00",
+      "updatedAt": "2026-07-08T08:34:42.602994+00:00"
     },
     {
-      "id": "10202675609921",
-      "title": "Chiikawa Choco Lollipop Hand Mirror",
-      "price": "US$ 15.92",
-      "originalPrice": "US$ 19.90",
-      "image": "//www.blippo.com/cdn/shop/files/20260220-15_649d5bb9-5562-4d4d-a70a-e040c29b790f_2048x.jpg?v=1782282845",
-      "url": "https://www.blippo.com/products/chiikawa-choco-lollipop-hand-mirror",
-      "rating": null,
-      "reviews": 0
+      "name": "Chiikawa Choco Lollipop Hand Mirror",
+      "slug": "chiikawa-choco-lollipop-hand-mirror",
+      "description": "Chiikawa Choco Lollipop Hand Mirror is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Choco Lollipop Hand Mirror with premium quality and adorable kawaii design.",
+      "price": 15.92,
+      "originalPrice": 19.9,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20260220-15_649d5bb9-5562-4d4d-a70a-e040c29b790f_2048x.jpg?v=1782282845",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20260220-15_649d5bb9-5562-4d4d-a70a-e040c29b790f_2048x.jpg?v=1782282845"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 6,
+      "freeShipping": false,
+      "rewards": 1592,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603017+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603017+00:00"
     },
     {
-      "id": "10207401869633",
-      "title": "Chiikawa Springtime Buddies 12-Color Crayon Set",
-      "price": "US$ 14.90",
+      "name": "Chiikawa Springtime Buddies 12-Color Crayon Set",
+      "slug": "chiikawa-springtime-buddies-12-color-crayon-set",
+      "description": "Chiikawa Springtime Buddies 12-Color Crayon Set is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Springtime Buddies 12-Color Crayon Set with premium quality and adorable kawaii design.",
+      "price": 14.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20251112-160_d963357f-d591-4162-8177-3d825ffed813_2048x.jpg?v=1782294222",
-      "url": "https://www.blippo.com/products/chiikawa-springtime-buddies-12-color-crayon-set",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20251112-160_d963357f-d591-4162-8177-3d825ffed813_2048x.jpg?v=1782294222",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20251112-160_d963357f-d591-4162-8177-3d825ffed813_2048x.jpg?v=1782294222"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 12,
+      "freeShipping": false,
+      "rewards": 1490,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603026+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603026+00:00"
     },
     {
-      "id": "10206819746113",
-      "title": "Chiikawa Momonga Paper Clip Can Box",
-      "price": "US$ 13.90",
+      "name": "Chiikawa Momonga Paper Clip Can Box",
+      "slug": "chiikawa-momonga-paper-clip-can-box",
+      "description": "Chiikawa Momonga Paper Clip Can Box is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Momonga Paper Clip Can Box with premium quality and adorable kawaii design.",
+      "price": 13.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20250417-102_2048x.jpg?v=1782297739",
-      "url": "https://www.blippo.com/products/chiikawa-momonga-paper-clip-can-box",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20250417-102_2048x.jpg?v=1782297739",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20250417-102_2048x.jpg?v=1782297739"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 10,
+      "freeShipping": false,
+      "rewards": 1390,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603033+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603033+00:00"
     },
     {
-      "id": "10206537580865",
-      "title": "Chiikawa Together As Friends Face Towel",
-      "price": "US$ 13.52",
-      "originalPrice": "US$ 16.90",
-      "image": "//www.blippo.com/cdn/shop/files/20241113-59_2048x.jpg?v=1782282687",
-      "url": "https://www.blippo.com/products/chiikawa-together-as-friends-face-towel",
-      "rating": null,
-      "reviews": 0
+      "name": "Chiikawa Together As Friends Face Towel",
+      "slug": "chiikawa-together-as-friends-face-towel",
+      "description": "Chiikawa Together As Friends Face Towel is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Together As Friends Face Towel with premium quality and adorable kawaii design.",
+      "price": 13.52,
+      "originalPrice": 16.9,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20241113-59_2048x.jpg?v=1782282687",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20241113-59_2048x.jpg?v=1782282687"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 8,
+      "freeShipping": false,
+      "rewards": 1352,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603041+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603041+00:00"
     },
     {
-      "id": "10206681497921",
-      "title": "Chiikawa Usagi Squishy Charm Gachapon",
-      "price": "US$ 10.90",
+      "name": "Chiikawa Usagi Squishy Charm Gachapon",
+      "slug": "chiikawa-usagi-squishy-charm-gachapon",
+      "description": "Chiikawa Usagi Squishy Charm Gachapon is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Usagi Squishy Charm Gachapon with premium quality and adorable kawaii design.",
+      "price": 10.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20251021-49_80fff678-4328-482c-80db-343fa5d37edc_2048x.jpg?v=1782288592",
-      "url": "https://www.blippo.com/products/chiikawa-usagi-squishy-charm-gachapon",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20251021-49_80fff678-4328-482c-80db-343fa5d37edc_2048x.jpg?v=1782288592",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20251021-49_80fff678-4328-482c-80db-343fa5d37edc_2048x.jpg?v=1782288592"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 8,
+      "freeShipping": false,
+      "rewards": 1090,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603048+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603048+00:00"
     },
     {
-      "id": "10207207948609",
-      "title": "Chiikawa Hachiware Kani Mimi Pen",
-      "price": "US$ 9.90",
+      "name": "Chiikawa Hachiware Kani Mimi Pen",
+      "slug": "chiikawa-hachiware-kani-mimi-pen",
+      "description": "Chiikawa Hachiware Kani Mimi Pen is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Hachiware Kani Mimi Pen with premium quality and adorable kawaii design.",
+      "price": 9.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/chiikawa-hachiware-kani-mimi-pen",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 7,
+      "freeShipping": false,
+      "rewards": 990,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603054+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603054+00:00"
     },
     {
-      "id": "10207185666369",
-      "title": "Chiikawa Instant Marumiya Pork & Corn Sweet Curry",
-      "price": "US$ 9.90",
+      "name": "Chiikawa Instant Marumiya Pork & Corn Sweet Curry",
+      "slug": "chiikawa-instant-marumiya-pork-and-corn-sweet-curry",
+      "description": "Chiikawa Instant Marumiya Pork & Corn Sweet Curry is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Instant Marumiya Pork & Corn Sweet Curry with premium quality and adorable kawaii design.",
+      "price": 9.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/chiikawa-instant-marumiya-pork-and-corn-sweet-curry",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 12,
+      "freeShipping": false,
+      "rewards": 990,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603060+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603060+00:00"
     },
     {
-      "id": "10206774329665",
-      "title": "Chiikawa And Usagi Stick Scissors",
-      "price": "US$ 9.73",
-      "originalPrice": "US$ 13.90",
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/chiikawa-and-usagi-stick-scissors",
-      "rating": null,
-      "reviews": 0
+      "name": "Chiikawa And Usagi Stick Scissors",
+      "slug": "chiikawa-and-usagi-stick-scissors",
+      "description": "Chiikawa And Usagi Stick Scissors is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa And Usagi Stick Scissors with premium quality and adorable kawaii design.",
+      "price": 9.73,
+      "originalPrice": 13.9,
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 9,
+      "freeShipping": false,
+      "rewards": 973,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603068+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603068+00:00"
     },
     {
-      "id": "10202683539777",
-      "title": "Chiikawa Manga Sticker Collection Vol 3",
-      "price": "US$ 9.03",
-      "originalPrice": "US$ 12.90",
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/chiikawa-manga-sticker-collection-vol-3",
-      "rating": null,
-      "reviews": 0
+      "name": "Chiikawa Manga Sticker Collection Vol 3",
+      "slug": "chiikawa-manga-sticker-collection-vol-3",
+      "description": "Chiikawa Manga Sticker Collection Vol 3 is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa Manga Sticker Collection Vol 3 with premium quality and adorable kawaii design.",
+      "price": 9.03,
+      "originalPrice": 12.9,
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 5,
+      "freeShipping": false,
+      "rewards": 903,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "sticker"],
+      "createdAt": "2026-07-08T08:34:42.603075+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603075+00:00"
     },
     {
-      "id": "10207285477697",
-      "title": "Pokemon Pokepeace Sleepy Plushie - Piplup/ Medium",
-      "price": "US$ 74.90",
+      "name": "Pokemon Pokepeace Sleepy Plushie - Piplup/ Medium",
+      "slug": "pokemon-pokepeace-sleepy-plushie-piplup-medium",
+      "description": "Pokemon Pokepeace Sleepy Plushie - Piplup/ Medium is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Pokepeace Sleepy Plushie - Piplup/ Medium with premium quality and adorable kawaii design.",
+      "price": 74.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20241007-11_2048x.jpg?v=1782288391",
-      "url": "https://www.blippo.com/products/pokemon-pokepeace-sleepy-plushie-piplup-medium",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20241007-11_2048x.jpg?v=1782288391",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20241007-11_2048x.jpg?v=1782288391"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 12,
+      "freeShipping": true,
+      "rewards": 7490,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon", "plush"],
+      "createdAt": "2026-07-08T08:34:42.603083+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603083+00:00"
     },
     {
-      "id": "10206767710529",
-      "title": "Pokemon Insulated Backpack",
-      "price": "US$ 66.00",
+      "name": "Pokemon Insulated Backpack",
+      "slug": "pokemon-insulated-backpack",
+      "description": "Pokemon Insulated Backpack is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Insulated Backpack with premium quality and adorable kawaii design.",
+      "price": 66.0,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20240412-247_2048x.jpg?v=1782293642",
-      "url": "https://www.blippo.com/products/pokemon-insulated-backpack",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20240412-247_2048x.jpg?v=1782293642",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20240412-247_2048x.jpg?v=1782293642"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 11,
+      "freeShipping": true,
+      "rewards": 6600,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon"],
+      "createdAt": "2026-07-08T08:34:42.603090+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603090+00:00"
     },
     {
-      "id": "10207339610433",
-      "title": "Pokemon Monpoke Plushie - Pikachu / Jumbo",
-      "price": "US$ 64.90",
+      "name": "Pokemon Monpoke Plushie - Pikachu / Jumbo",
+      "slug": "pokemon-monpoke-plushie-pikachu-jumbo",
+      "description": "Pokemon Monpoke Plushie - Pikachu / Jumbo is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Monpoke Plushie - Pikachu / Jumbo with premium quality and adorable kawaii design.",
+      "price": 64.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20230801-161_2048x.jpg?v=1782292443",
-      "url": "https://www.blippo.com/products/pokemon-monpoke-plushie-pikachu-jumbo",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20230801-161_2048x.jpg?v=1782292443",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20230801-161_2048x.jpg?v=1782292443"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 5,
+      "freeShipping": true,
+      "rewards": 6490,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon", "plush"],
+      "createdAt": "2026-07-08T08:34:42.603097+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603097+00:00"
     },
     {
-      "id": "10206423810369",
-      "title": "Pokemon Pikachu Piggy Bank Toy",
-      "price": "US$ 49.90",
+      "name": "Pokemon Pikachu Piggy Bank Toy",
+      "slug": "pokemon-pikachu-piggy-bank-toy",
+      "description": "Pokemon Pikachu Piggy Bank Toy is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Pikachu Piggy Bank Toy with premium quality and adorable kawaii design.",
+      "price": 49.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20210629_019_2048x.jpg?v=1782287509",
-      "url": "https://www.blippo.com/products/pokemon-pikachu-piggy-bank-toy",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20210629_019_2048x.jpg?v=1782287509",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20210629_019_2048x.jpg?v=1782287509"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 4,
+      "freeShipping": true,
+      "rewards": 4990,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon"],
+      "createdAt": "2026-07-08T08:34:42.603103+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603103+00:00"
     },
     {
-      "id": "10206852710721",
-      "title": "Pokemon Gingham Shoulder Bag With Acrylic Charm",
-      "price": "US$ 48.90",
+      "name": "Pokemon Gingham Shoulder Bag With Acrylic Charm",
+      "slug": "pokemon-gingham-shoulder-bag-with-acrylic-charm",
+      "description": "Pokemon Gingham Shoulder Bag With Acrylic Charm is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Gingham Shoulder Bag With Acrylic Charm with premium quality and adorable kawaii design.",
+      "price": 48.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20231215-160_2048x.jpg?v=1782296793",
-      "url": "https://www.blippo.com/products/pokemon-gingham-shoulder-bag-with-acrylic-charm",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20231215-160_2048x.jpg?v=1782296793",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20231215-160_2048x.jpg?v=1782296793"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 3,
+      "freeShipping": true,
+      "rewards": 4890,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon", "bag"],
+      "createdAt": "2026-07-08T08:34:42.603109+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603109+00:00"
     },
     {
-      "id": "10207434604865",
-      "title": "Pokemon Fluffy Plushie - Squirtle / Medium",
-      "price": "US$ 46.90",
+      "name": "Pokemon Fluffy Plushie - Squirtle / Medium",
+      "slug": "pokemon-fluffy-plushie-squirtle-medium",
+      "description": "Pokemon Fluffy Plushie - Squirtle / Medium is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Fluffy Plushie - Squirtle / Medium with premium quality and adorable kawaii design.",
+      "price": 46.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20230511-142_2048x.jpg?v=1782296177",
-      "url": "https://www.blippo.com/products/pokemon-fluffy-plushie-squirtle-medium",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20230511-142_2048x.jpg?v=1782296177",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20230511-142_2048x.jpg?v=1782296177"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 3,
+      "freeShipping": true,
+      "rewards": 4690,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon", "plush"],
+      "createdAt": "2026-07-08T08:34:42.603116+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603116+00:00"
     },
     {
-      "id": "10206450057537",
-      "title": "Pokemon Pikachu Fluffy Plushie - Medium",
-      "price": "US$ 45.90",
+      "name": "Pokemon Pikachu Fluffy Plushie - Medium",
+      "slug": "pokemon-pikachu-fluffy-plushie-medium",
+      "description": "Pokemon Pikachu Fluffy Plushie - Medium is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Pikachu Fluffy Plushie - Medium with premium quality and adorable kawaii design.",
+      "price": 45.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/20210623_083_2048x.jpg?v=1782289213",
-      "url": "https://www.blippo.com/products/pokemon-pikachu-fluffy-plushie-medium",
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20210623_083_2048x.jpg?v=1782289213",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20210623_083_2048x.jpg?v=1782289213"
+      ],
       "rating": 2,
-      "reviews": 1
+      "reviews": 1,
+      "stock": 7,
+      "freeShipping": true,
+      "rewards": 4590,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon", "plush"],
+      "createdAt": "2026-07-08T08:34:42.603123+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603123+00:00"
     },
     {
-      "id": "10207583830337",
-      "title": "Pokemon Pokepeace Pikachu Cushion",
-      "price": "US$ 45.52",
-      "originalPrice": "US$ 56.90",
-      "image": "//www.blippo.com/cdn/shop/files/20241007-14_2048x.jpg?v=1782282673",
-      "url": "https://www.blippo.com/products/pokemon-pokepeace-pikachu-cushion",
-      "rating": null,
-      "reviews": 0
+      "name": "Pokemon Pokepeace Pikachu Cushion",
+      "slug": "pokemon-pokepeace-pikachu-cushion",
+      "description": "Pokemon Pokepeace Pikachu Cushion is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Pokepeace Pikachu Cushion with premium quality and adorable kawaii design.",
+      "price": 45.52,
+      "originalPrice": 56.9,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/20241007-14_2048x.jpg?v=1782282673",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/20241007-14_2048x.jpg?v=1782282673"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 14,
+      "freeShipping": true,
+      "rewards": 4552,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon"],
+      "createdAt": "2026-07-08T08:34:42.603130+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603130+00:00"
     },
     {
-      "id": "10207352815937",
-      "title": "Pokemon Pikachu Handy Pillow",
-      "price": "US$ 43.90",
+      "name": "Pokemon Pikachu Handy Pillow",
+      "slug": "pokemon-pikachu-handy-pillow",
+      "description": "Pokemon Pikachu Handy Pillow is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Pikachu Handy Pillow with premium quality and adorable kawaii design.",
+      "price": 43.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/pokemon-pikachu-handy-pillow",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 6,
+      "freeShipping": true,
+      "rewards": 4390,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon"],
+      "createdAt": "2026-07-08T08:34:42.603137+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603137+00:00"
     },
     {
-      "id": "10206563369281",
-      "title": "Pokemon Pikachu Self-Righting Doll",
-      "price": "US$ 39.90",
+      "name": "Pokemon Pikachu Self-Righting Doll",
+      "slug": "pokemon-pikachu-self-righting-doll",
+      "description": "Pokemon Pikachu Self-Righting Doll is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Pikachu Self-Righting Doll with premium quality and adorable kawaii design.",
+      "price": 39.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/pokemon-pikachu-self-righting-doll",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 9,
+      "freeShipping": true,
+      "rewards": 3990,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon"],
+      "createdAt": "2026-07-08T08:34:42.603142+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603142+00:00"
     },
     {
-      "id": "10206755881281",
-      "title": "Pokemon Pokepeace Retro Phone-Style Case iPhone 15/14",
-      "price": "US$ 39.90",
+      "name": "Pokemon Pokepeace Retro Phone-Style Case iPhone 15/14",
+      "slug": "pokemon-pokepeace-retro-phone-style-case-iphone-15-14",
+      "description": "Pokemon Pokepeace Retro Phone-Style Case iPhone 15/14 is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Pokepeace Retro Phone-Style Case iPhone 15/14 with premium quality and adorable kawaii design.",
+      "price": 39.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/pokemon-pokepeace-retro-phone-style-case-iphone-15-14",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 4,
+      "freeShipping": true,
+      "rewards": 3990,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon"],
+      "createdAt": "2026-07-08T08:34:42.603155+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603155+00:00"
     },
     {
-      "id": "10206595514689",
-      "title": "Pokemon Mofumofu Wrist Rest - Pichu",
-      "price": "US$ 33.90",
+      "name": "Pokemon Mofumofu Wrist Rest - Pichu",
+      "slug": "pokemon-mofumofu-wrist-rest-pichu",
+      "description": "Pokemon Mofumofu Wrist Rest - Pichu is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Pokemon Mofumofu Wrist Rest - Pichu with premium quality and adorable kawaii design.",
+      "price": 33.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/pokemon-mofumofu-wrist-rest-pichu",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 11,
+      "freeShipping": false,
+      "rewards": 3390,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "pokemon"],
+      "createdAt": "2026-07-08T08:34:42.603165+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603165+00:00"
     },
     {
-      "id": "10293495071041",
-      "title": "Kit Kat Chocolate Variety Box",
-      "price": "US$ 155.90",
+      "name": "Kit Kat Chocolate Variety Box",
+      "slug": "kit-kat-chocolate-variety-box",
+      "description": "Kit Kat Chocolate Variety Box is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Kit Kat Chocolate Variety Box with premium quality and adorable kawaii design.",
+      "price": 155.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/49102-20260610A_2048x.jpg?v=1782202156",
-      "url": "https://www.blippo.com/products/kit-kat-chocolate-variety-box",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49102-20260610A_2048x.jpg?v=1782202156",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49102-20260610A_2048x.jpg?v=1782202156"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 4,
+      "freeShipping": true,
+      "rewards": 15590,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603172+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603172+00:00"
     },
     {
-      "id": "10293506441537",
-      "title": "Opanchu Usagi Pop Stickers",
-      "price": "US$ 8.50",
+      "name": "Opanchu Usagi Pop Stickers",
+      "slug": "opanchu-usagi-pop-stickers",
+      "description": "Opanchu Usagi Pop Stickers is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Opanchu Usagi Pop Stickers with premium quality and adorable kawaii design.",
+      "price": 8.5,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/49103-20260612A_2048x.jpg?v=1782204482",
-      "url": "https://www.blippo.com/products/opanchu-usagi-pop-stickers",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49103-20260612A_2048x.jpg?v=1782204482",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49103-20260612A_2048x.jpg?v=1782204482"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 13,
+      "freeShipping": false,
+      "rewards": 850,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "sticker"],
+      "createdAt": "2026-07-08T08:34:42.603178+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603178+00:00"
     },
     {
-      "id": "10293453685057",
-      "title": "My Melody Retro Can Mirror",
-      "price": "US$ 4.90",
+      "name": "My Melody Retro Can Mirror",
+      "slug": "my-melody-retro-can-mirror",
+      "description": "My Melody Retro Can Mirror is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute My Melody Retro Can Mirror with premium quality and adorable kawaii design.",
+      "price": 4.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/49096-20260519A_2048x.jpg?v=1782198835",
-      "url": "https://www.blippo.com/products/my-melody-retro-can-mirror",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49096-20260519A_2048x.jpg?v=1782198835",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49096-20260519A_2048x.jpg?v=1782198835"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 9,
+      "freeShipping": false,
+      "rewards": 490,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603184+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603184+00:00"
     },
     {
-      "id": "10293540094273",
-      "title": "Hangyodon Arch Foam Eraser",
-      "price": "US$ 3.50",
+      "name": "Hangyodon Arch Foam Eraser",
+      "slug": "hangyodon-arch-foam-eraser",
+      "description": "Hangyodon Arch Foam Eraser is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Hangyodon Arch Foam Eraser with premium quality and adorable kawaii design.",
+      "price": 3.5,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/49115-20260706A_2048x.jpg?v=1783316754",
-      "url": "https://www.blippo.com/products/hangyodon-arch-foam-eraser",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49115-20260706A_2048x.jpg?v=1783316754",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49115-20260706A_2048x.jpg?v=1783316754"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 6,
+      "freeShipping": false,
+      "rewards": 350,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603190+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603190+00:00"
     },
     {
-      "id": "10293524234561",
-      "title": "Hangyodon Dapper 3-Color Pen",
-      "price": "US$ 2.90",
+      "name": "Hangyodon Dapper 3-Color Pen",
+      "slug": "hangyodon-dapper-3-color-pen",
+      "description": "Hangyodon Dapper 3-Color Pen is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Hangyodon Dapper 3-Color Pen with premium quality and adorable kawaii design.",
+      "price": 2.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/49114-20260706A_2048x.jpg?v=1783316684",
-      "url": "https://www.blippo.com/products/hangyodon-dapper-3-color-pen",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49114-20260706A_2048x.jpg?v=1783316684",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49114-20260706A_2048x.jpg?v=1783316684"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 13,
+      "freeShipping": false,
+      "rewards": 290,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603196+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603196+00:00"
     },
     {
-      "id": "10293569487169",
-      "title": "Chiikawa AcryMini Charm",
-      "price": "US$ 1.90",
+      "name": "Chiikawa AcryMini Charm",
+      "slug": "chiikawa-acrymini-charm",
+      "description": "Chiikawa AcryMini Charm is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chiikawa AcryMini Charm with premium quality and adorable kawaii design.",
+      "price": 1.9,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/49122_2048x.jpg?v=1782212051",
-      "url": "https://www.blippo.com/products/chiikawa-acrymini-charm",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49122_2048x.jpg?v=1782212051",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49122_2048x.jpg?v=1782212051"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 10,
+      "freeShipping": false,
+      "rewards": 190,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603205+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603205+00:00"
     },
     {
-      "id": "10293547303233",
-      "title": "Keroppi Dapper 3-Color Pen",
-      "price": "US$ 0.00",
+      "name": "Keroppi Dapper 3-Color Pen",
+      "slug": "keroppi-dapper-3-color-pen",
+      "description": "Keroppi Dapper 3-Color Pen is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Keroppi Dapper 3-Color Pen with premium quality and adorable kawaii design.",
+      "price": 0.0,
       "originalPrice": null,
-      "image": "//www.blippo.com/cdn/shop/files/49116-20260706A_2048x.jpg?v=1783316872",
-      "url": "https://www.blippo.com/products/keroppi-dapper-3-color-pen",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49116-20260706A_2048x.jpg?v=1783316872",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49116-20260706A_2048x.jpg?v=1783316872"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 4,
+      "freeShipping": false,
+      "rewards": 0,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603216+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603216+00:00"
     },
     {
-      "id": "10292835680577",
-      "title": "Mochi Gyoza Squishy",
-      "price": "US$ 80.50",
-      "originalPrice": "US$ 115.00",
-      "image": "//www.blippo.com/cdn/shop/files/49083-20260521A_2048x.jpg?v=1782110814",
-      "url": "https://www.blippo.com/products/mochi-gyoza-squishy",
-      "rating": null,
-      "reviews": 0
+      "name": "Mochi Gyoza Squishy",
+      "slug": "mochi-gyoza-squishy",
+      "description": "Mochi Gyoza Squishy is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Mochi Gyoza Squishy with premium quality and adorable kawaii design.",
+      "price": 80.5,
+      "originalPrice": 115.0,
+      "thumbnail": "https://www.blippo.com/cdn/shop/files/49083-20260521A_2048x.jpg?v=1782110814",
+      "images": [
+        "https://www.blippo.com/cdn/shop/files/49083-20260521A_2048x.jpg?v=1782110814"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 11,
+      "freeShipping": true,
+      "rewards": 8050,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603224+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603224+00:00"
     },
     {
-      "id": "10202672234817",
-      "title": "Chococat Lap Cat Plushie - Big",
-      "price": "US$ 72.90",
+      "name": "Chococat Lap Cat Plushie - Big",
+      "slug": "chococat-lap-cat-plushie-big",
+      "description": "Chococat Lap Cat Plushie - Big is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Chococat Lap Cat Plushie - Big with premium quality and adorable kawaii design.",
+      "price": 72.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/chococat-lap-cat-plushie-big",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 3,
+      "freeShipping": true,
+      "rewards": 7290,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan", "plush"],
+      "createdAt": "2026-07-08T08:34:42.603231+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603231+00:00"
     },
     {
-      "id": "10211055731009",
-      "title": "Kuromi Fancy Accessory Case",
-      "price": "US$ 52.90",
+      "name": "Kuromi Fancy Accessory Case",
+      "slug": "kuromi-fancy-accessory-case",
+      "description": "Kuromi Fancy Accessory Case is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Kuromi Fancy Accessory Case with premium quality and adorable kawaii design.",
+      "price": 52.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/kuromi-fancy-accessory-case",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 11,
+      "freeShipping": true,
+      "rewards": 5290,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603237+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603237+00:00"
     },
     {
-      "id": "10211049537857",
-      "title": "Usahana Fancy Accessory Case",
-      "price": "US$ 52.90",
+      "name": "Usahana Fancy Accessory Case",
+      "slug": "usahana-fancy-accessory-case",
+      "description": "Usahana Fancy Accessory Case is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Usahana Fancy Accessory Case with premium quality and adorable kawaii design.",
+      "price": 52.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/usahana-fancy-accessory-case",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 9,
+      "freeShipping": true,
+      "rewards": 5290,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603243+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603243+00:00"
     },
     {
-      "id": "10219539431745",
-      "title": "Kuromi Lolita Vanity Case",
-      "price": "US$ 48.90",
+      "name": "Kuromi Lolita Vanity Case",
+      "slug": "kuromi-lolita-vanity-case-1",
+      "description": "Kuromi Lolita Vanity Case is a cute Japanese-inspired product made with premium quality materials. Designed for everyday use or collecting, it features an adorable kawaii style and is perfect as a gift or for your personal collection.",
+      "excerpt": "Cute Kuromi Lolita Vanity Case with premium quality and adorable kawaii design.",
+      "price": 48.9,
       "originalPrice": null,
-      "image": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
-      "url": "https://www.blippo.com/products/kuromi-lolita-vanity-case-1",
-      "rating": null,
-      "reviews": 0
+      "thumbnail": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E",
+      "images": [
+        "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E"
+      ],
+      "rating": 4.8,
+      "reviews": 0,
+      "stock": 4,
+      "freeShipping": true,
+      "rewards": 4890,
+      "features": [
+        "Premium quality material.",
+        "Authentic Japanese-inspired design.",
+        "Perfect for daily use or collecting.",
+        "Great gift for kawaii lovers."
+      ],
+      "tags": ["kawaii", "japan"],
+      "createdAt": "2026-07-08T08:34:42.603249+00:00",
+      "updatedAt": "2026-07-08T08:34:42.603249+00:00"
     }
   ]
 }

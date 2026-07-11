@@ -35,11 +35,11 @@ export default function WishlistButton({ productId }: Props) {
   return (
     <>
       <AddRemoveWishlist
+        variant="detail"
         productId={productId}
         isWishlist={wishlist.includes(productId)}
         onAddWishlist={handleAddWishlist}
       />
-      &nbsp; Add to Wishlist
     </>
   );
 }

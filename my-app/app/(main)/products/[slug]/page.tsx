@@ -1,7 +1,7 @@
 import Image from "next/image";
-import AddToWishlist from "@/components/AddToWishlist";
+import AddToWishlist from "@/components/WishlistButton";
 import AddRemoveWishlist from "@/components/AddRemoveWishlist";
-import WishlistButton from "@/components/AddToWishlist";
+import WishlistButton from "@/components/WishlistButton";
 
 export default async function ProductDetail({
   params,
@@ -108,9 +108,7 @@ export default async function ProductDetail({
           </div>
 
           {/* WISHLIST */}
-          <button className="mt-3 flex w-full justify-center text-lg text-primary">
-            <WishlistButton productId={product._id} />
-          </button>
+          <WishlistButton productId={product._id} />
 
           {/* DESCRIPTION */}
           <div className="mt-8 text-base leading-relaxed text-gray-500">

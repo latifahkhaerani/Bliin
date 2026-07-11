@@ -36,7 +36,9 @@ export default async function Navbar() {
             <div className="absolute right-0 top-full z-50 hidden pt-3 group-hover:block">
               <div className="w-48 rounded-lg border border-gray-200 bg-white p-2 shadow-lg">
                 {isLogin ? (
-                  <LogoutButton />
+                  <Link href="/login">
+                    <LogoutButton />
+                  </Link>
                 ) : (
                   <>
                     <Link

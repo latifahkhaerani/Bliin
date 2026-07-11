@@ -147,7 +147,7 @@ export default async function ProductDetail({
 
           {/* DESCRIPTION */}
           <div className="mt-5">
-            <h2  className={`${fredoka.className} text-3xl text-primary`}>
+            <h2 className={`${fredoka.className} text-3xl text-primary`}>
               Product Details
             </h2>
 

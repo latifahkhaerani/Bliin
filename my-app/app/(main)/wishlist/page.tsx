@@ -55,17 +55,17 @@ export default function Wishlist() {
 
   return (
     <main className="min-h-screen bg-white px-12 py-12">
-      <h1 className="text-center text-6xl font-extrabold text-primary">
+      <h1 className="text-center text-5xl font-extrabold text-primary">
         Wishlist
       </h1>
 
       {wishlists.length === 0 ? (
-        <div className="flex flex-col items-center pt-12">
-          <p className="text-2xl text-gray-500">Your wishlist is empty</p>
+        <div className="flex flex-col items-center pt-5">
+          <p className="text-sm text-gray-500">Your wishlist is empty</p>
 
           <Link
             href="/products"
-            className="mt-4 rounded-xl bg-primary px-7 py-4 text-2xl text-white transition hover:opacity-80"
+            className="mt-3 rounded-xl bg-primary px-4 py-2 text-[12px] text-white transition hover:opacity-80"
           >
             Discover more
           </Link>

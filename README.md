@@ -1,53 +1,96 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=24211896&assignment_repo_type=AssignmentRepo)
 # My eCommerce App
 
-## Tujuan Pembelajaran
+A full-stack e-commerce web application built with Next.js, TypeScript, and MongoDB. The project implements core e-commerce features including authentication, product browsing, search, infinite scrolling, and wishlist management.
 
-- Student mampu membuat aplikasi server dengan menggunakan menggunakan Typescript, NEXT.js dan melakukan proses CRUD dengan database MongoDB
-- Student mampu membuat web aplikasi dengan menggunakan framework NEXT.js
-- Student mampu menghandle navigasi pada NEXT.js
-- Student mampu menghandle authentikasi pada NEXT.js
-- Student mampu mengimplementasikan CSR & SSR pada NEXT.js
+## Features
 
-## Aturan Umum
+- **User Authentication** — Register and login functionality.
+- **Product Listing** — Browse products with featured products and product lists.
+- **Product Search** — Search products by name with debounce implementation.
+- **Infinite Scroll** — Load additional products progressively while browsing.
+- **Product Details** — View detailed information for individual products.
+- **Wishlist** — Add products to wishlist and remove them from wishlist.
+- **Responsive UI** — Responsive interface for different screen sizes.
+- **Dynamic Meta Tags** — Product-specific meta information for detail pages.
+- **Client & Server Rendering** — Implements CSR and SSR with Next.js.
 
-Challenge Hacktiv8 bersifat latihan WAJIB yang menjunjung tinggi INTEGRITAS. Segala bentuk ketidakjujuran meliputi peniruan, plagiarisme, pemalsuan pengerjaan akan mendapatkan tindakan tegas dari akademik.
+## Tech Stack
 
-Untuk melatih best practice di lapangan kerja, student diharuskan untuk melakukan git commit minimal 1 hari 4 kali dengan message yang deskriptif atau commit message yang sesuai
+- **Framework:** Next.js
+- **Language:** TypeScript
+- **Database:** MongoDB
+- **Frontend:** React
+- **Styling:** CSS
+- **Authentication:** Next.js Authentication
+- **Rendering:** CSR & SSR
 
-## Ringkasan
+## Pages
 
-My eCommerce App adalah sebuah web aplikasi yang dibangun menguunakan Typescript , framework NEXT.js dan database MongoDB, jadi kerjakan dengan baik sebagai bekal portofolio kamu.
+- **Register** — User registration page.
+- **Login** — User authentication page.
+- **Home** — Promotional banner, e-commerce information, and featured products.
+- **Products** — Product listing with search and infinite scroll.
+- **Product Detail** — Detailed product information with wishlist functionality.
+- **Wishlist** — List of saved products with remove functionality.
 
-Pada challenge ini, kamu diminta untuk membuat aplikasi client-server dengan detail sebagai berikut:
+## Key Implementation
 
-### Halaman
+### Authentication
 
-- [ ] Halaman Register
-- [ ] Halaman Login
-- [ ] Halaman Home
-  - [ ] Banner Promo
-  - [ ] Detail info Ecommerce
-  - [ ] Featured Product (5-10 product) + “see-all”
-- [ ] Halaman Product
-- [ ] List Product
-  - [ ] Fitur Search
-  - [ ] Fitur Pagination (menggunakan infinite scroll)
-  - [ ] Fitur Add to wishlist
-- [ ] Halaman Detail Product
-  - [ ] Fitur Add to wishlist
-  - [ ] Implementasi Meta Tag di Head sesuai detail product
-- [ ] Halaman Wishlist Product
-  - [ ] List Wishlist
-  - [ ] Fitur Remove Wishlist
+Implemented user registration and login functionality to provide authenticated access to user-specific features such as the wishlist.
 
-### Fitur
+### Product Management
 
-- [ ] Fitur register
-- [ ] Fitur login
-- [ ] Fitur show list product
-- [ ] Fitur show detail product
-- [ ] Fitur add to wishlist
-- [ ] Fitur remove wishlist
-- [ ] Fitur search product berdasarkan nama (implement menerapkan debounce)
-- [ ] Fitur pagination (implement infinite scroll)
+The application provides product listing and detail pages with support for:
+
+- Product search
+- Featured products
+- Product details
+- Infinite scrolling
+- Wishlist management
+
+### Search
+
+Product search is implemented based on product names with debounce functionality to reduce unnecessary requests while the user is typing.
+
+### Infinite Scroll
+
+The product listing uses infinite scroll to progressively load additional products instead of displaying all products at once.
+
+### Wishlist
+
+Users can:
+
+- Add products to their wishlist
+- View saved products
+- Remove products from their wishlist
+
+### Next.js Rendering
+
+The project demonstrates both Client-Side Rendering (CSR) and Server-Side Rendering (SSR) using Next.js based on the requirements of each page and feature.
+
+### Dynamic Meta Tags
+
+Product detail pages include dynamic meta information based on the selected product.
+
+## Project Highlights
+
+- Full-stack Next.js application
+- TypeScript development
+- MongoDB integration
+- User authentication
+- Product search with debounce
+- Infinite scroll
+- Wishlist functionality
+- CSR and SSR implementation
+- Dynamic product meta tags
+- Responsive e-commerce interface
+
+## Project Links
+
+- **Repository:** <your-github-repository-url>
+- **Live Demo:** <your-live-demo-url>
+
+---
+
+Built with Next.js, TypeScript, MongoDB, and React.

@@ -20,7 +20,7 @@ A full-stack e-commerce web application built with Next.js, TypeScript, and Mong
 - **Language:** TypeScript
 - **Database:** MongoDB
 - **Frontend:** React
-- **Styling:** CSS
+- **Styling:** Tailwind CSS
 - **Authentication:** Next.js Authentication
 - **Rendering:** CSR & SSR
 

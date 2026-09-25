@@ -88,8 +88,7 @@ Product detail pages include dynamic meta information based on the selected prod
 
 ## Project Links
 
-- **Repository:** <your-github-repository-url>
-- **Live Demo:** <your-live-demo-url>
+- **Live Demo:** [<your-live-demo-url>](https://bliin.vercel.app/)
 
 ---
 
